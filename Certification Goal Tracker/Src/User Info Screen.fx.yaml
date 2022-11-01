@@ -1,0 +1,264 @@
+"'User Info Screen' As screen":
+    OnVisible: =
+
+    UserLabel As label:
+        FontWeight: =Semibold
+        Height: =70
+        Size: =22
+        Text: =Concatenate("Welcome ",User().FullName)
+        Width: =1009
+        X: =19
+        Y: =77
+        ZIndex: =1
+
+    CertificationGoals As dataTable.datatable:
+        BorderStyle: =BorderStyle.Solid
+        DisplayMode: =DisplayMode.Edit
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =169
+        Items: =Filter(Filter('Certificate Goals','Certificate Goals (Views)'.'Current Year Certificate Goal'),Contact.Contact= currentUserContact.contactid)
+        NoDataText: ="You have no Certification Goals assigned"
+        Width: =1313
+        X: =31
+        Y: =291
+        ZIndex: =2
+
+        "'Status Reason_Column1' As dataTableColumn.complexOptionSetColumn":
+            AutoWidth: =false
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Status"
+            FieldName: ="statuscode"
+            FieldVariantName: ="complexOptionSetColumn"
+            Height: =155
+            LayoutHeight: =Parent.Height
+            Order: =6
+            Text: =ThisItem.'Status Reason'
+            Width: =245
+            X: =726
+            Y: =20
+            ZIndex: =3
+
+        "'Date Completed_Column2' As dataTableColumn.dateTimeColumn":
+            AutoWidth: =false
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Date Completed"
+            FieldName: ="cr139_datecompleted"
+            FieldVariantName: ="dateTimeColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =7
+            Text: =Text(ThisItem.'Date Completed',DateTimeFormat.LongDate)
+            Width: =320
+            X: =1015
+            Y: =0
+            ZIndex: =4
+
+        "'Goal Name_Column1' As dataTableColumn.textualColumn":
+            AutoWidth: =false
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Goal Name"
+            FieldName: ="cr139_name"
+            FieldVariantName: ="textualColumn"
+            Height: =163
+            LayoutHeight: =Parent.Height
+            Order: =4
+            Text: =ThisItem.'Goal Name'
+            Width: =724
+            X: =18
+            Y: =0
+            ZIndex: =6
+
+    "'Your Certification Goals Label' As label":
+        FontWeight: =Semibold
+        Height: =48
+        Size: =20
+        Text: ="Yearly Certification Goals"
+        Width: =1009
+        X: =19
+        Y: =229
+        ZIndex: =3
+
+    "'MCP_ID Label' As label":
+        Size: =18
+        Text: ="MCID "
+        X: =31
+        Y: =163
+        ZIndex: =4
+
+    currentMCPValue As text:
+        AccessibleLabel: ="MCPID"
+        Default: =currentUserContact.cr139_certificationid
+        DisplayMode: =If(IsBlank(contactMCPID),DisplayMode.Edit, DisplayMode.Disabled)
+        EnableSpellCheck: =true
+        Height: =43
+        HintText: =""
+        OnChange: =
+        Size: =20
+        Width: =472
+        X: =148
+        Y: =161
+        ZIndex: =5
+
+    "'Screen 1 Header' As label":
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(56, 96, 178, 1)
+        Height: =65
+        Size: =20
+        Text: ="Certification Goal Tracker"
+        Width: =1366
+        ZIndex: =6
+
+    "'Screen 1 Footer' As label":
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(56, 96, 178, 1)
+        Height: =52
+        Size: =20
+        Text: =""
+        Width: =1366
+        Y: =716
+        ZIndex: =7
+
+    NextIcon As icon.NextArrow:
+        AccessibleLabel: ="Next"
+        BorderColor: =
+        BorderStyle: =
+        BorderThickness: =
+        Color: =RGBA(255, 255, 255, 83)
+        DisabledBorderColor: =
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisplayMode: =If(IsBlank(currentMCPValue),DisplayMode.Disabled, DisplayMode.Edit)
+        FocusedBorderColor: =
+        FocusedBorderThickness: =
+        Height: =45
+        HoverBorderColor: =
+        HoverColor: =RGBA(0, 0, 0, 0.5)
+        Icon: =Icon.NextArrow
+        OnSelect: |-
+            =Navigate(
+                'Selection of Type of Certificate',
+                ScreenTransition.Fade
+            );Reset(Radio1);
+        PressedBorderColor: =
+        PressedColor: =RGBA(0, 0, 0, 0.3)
+        TabIndex: =0
+        Tooltip: =If(IsBlank( currentUserContact.cr139_certificationid),"Please enter your MCP ID to proceed","Please proceed next to Upload your MS transcript")
+        Width: =45
+        X: =1312
+        Y: =719
+        ZIndex: =8
+
+    Label1 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =45
+        Text: ="Click here to update the certification details"
+        Width: =378
+        X: =934
+        Y: =719
+        ZIndex: =9
+
+    Toggle1 As toggleSwitch:
+        BorderStyle: =BorderStyle.None
+        Default: =true
+        DisabledBorderColor: =RGBA(255, 255, 255, 1)
+        FalseFill: =RGBA(0, 18, 107, 1)
+        FalseText: ="Manager"
+        Height: =39
+        ShowLabel: =false
+        Size: =15
+        TrueFill: =RGBA(0, 18, 107, 1)
+        TrueText: ="Employee"
+        Visible: =If(CountRows(Filter(Contacts,'Contacts (Views)'.'All Internal Employees'))> 1,true,false)
+        Width: =80
+        X: =1136
+        Y: =13
+        ZIndex: =10
+
+    CertificationGoals_2 As dataTable.datatable:
+        BorderStyle: =BorderStyle.Solid
+        DisplayMode: =DisplayMode.Edit
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =192
+        Items: =Filter(Filter('Individual Certificates','Individual Certificates (Views)'.'All Certificates'),Contact.Contact= currentUserContact.contactid)
+        NoDataText: ="You have no Certification Goals assigned"
+        Width: =1313
+        X: =31
+        Y: =524
+        ZIndex: =11
+
+        "'Exam Code_Column2' As dataTableColumn.textualColumn":
+            AutoWidth: =false
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Exam Code"
+            FieldName: ="cr139_examcode_"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =7
+            Text: =ThisItem.'Exam Code'
+            Width: =289
+            X: =0
+            Y: =0
+            ZIndex: =7
+
+        "'Exam Name_Column2' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Exam Name"
+            FieldName: ="cr139_name"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =8
+            Text: =ThisItem.Name
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =8
+
+        "'Date Completed_Column3' As dataTableColumn.dateTimeColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Date Completed"
+            FieldName: ="cr139_datecompleted"
+            FieldVariantName: ="dateTimeColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =9
+            Text: =Text(ThisItem.'Date Completed',DateTimeFormat.LongDate)
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =9
+
+    "'Your Certification Goals Label_3' As label":
+        FontWeight: =Semibold
+        Height: =50
+        Size: =20
+        Text: ="Completed Certificates"
+        Width: =1009
+        X: =19
+        Y: =460
+        ZIndex: =12
+
+    Label4 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =41
+        Size: =15
+        Text: ="Admin"
+        Visible: =If(CountRows(Filter(Contacts,'Contacts (Views)'.'All Internal Employees'))> 1,true,false)
+        Width: =75
+        X: =1061
+        Y: =11
+        ZIndex: =13
+
+    Label4_1 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Size: =15
+        Text: ="Employee"
+        Width: =117
+        X: =1216
+        Y: =13
+        ZIndex: =14
+

@@ -1,0 +1,102 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "sag_transcriptattachments",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "sag_transcriptattachment",
+    "MaxGetRowsCount": 500,
+    "Name": "Transcript Attachments",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "sag_CertificateGoal": "Certificate Goal",
+      "sag_Contact": "Contact",
+      "sag_cr139_certificategoal_TranscriptRecord_sa": "Certificate Goals",
+      "sag_name": "Name",
+      "sag_transcriptattachment_AsyncOperations": "System Jobs",
+      "sag_transcriptattachment_BulkDeleteFailures": "Bulk Delete Failures",
+      "sag_transcriptattachment_DuplicateBaseRecord": "Duplicate Records (sag_transcriptattachment_DuplicateBaseRecord)",
+      "sag_transcriptattachment_DuplicateMatchingRecord": "Duplicate Records (sag_transcriptattachment_DuplicateMatchingRecord)",
+      "sag_transcriptattachment_FileAttachments": "FileAttachments",
+      "sag_transcriptattachment_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "sag_transcriptattachment_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "sag_transcriptattachment_ProcessSession": "Process Sessions",
+      "sag_transcriptattachment_SyncErrors": "Sync Errors",
+      "sag_transcriptattachmentid": "Transcript Attachment",
+      "sag_transcriptfile": "Transcript File",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Transcript Attachments",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Transcript Attachments (Views)",
+    "Name": "_sag_transcriptattachment_views",
+    "RelatedEntityName": "Transcript Attachments",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "185f99ad-5a6d-4a29-85c9-2c1d0eeb96d9": "Active Transcript Attachments",
+      "40a22cc4-d574-4442-91cb-c20722eca980": "Transcript Attachment Advanced Find View",
+      "8a211c5e-03f4-40e7-b585-d97542ca0c5d": "Inactive Transcript Attachments",
+      "973315a8-dbec-4939-9932-25f15c98234c": "Transcript Attachment Associated View",
+      "9fb9ac0d-928b-42c6-8ca1-235523ef98e8": "Transcript Attachment Lookup View"
+    }
+  },
+  {
+    "DisplayName": "Status (Transcript Attachments)",
+    "Name": "sag_transcriptattachment_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Transcript Attachments"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Transcript Attachments",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Transcript Attachments)",
+    "Name": "sag_transcriptattachment_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Transcript Attachments"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Transcript Attachments",
+    "Type": "OptionSetInfo"
+  }
+]

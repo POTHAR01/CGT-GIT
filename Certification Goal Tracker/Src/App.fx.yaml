@@ -1,0 +1,9 @@
+App As appinfo:
+    BackEnabled: =false
+    OnStart: |
+        =Set(currentUserContact,First(ShowColumns(Filter(Contacts,Email=User().Email),"cr139_certificationid","fullname","contactid")));
+        Set(contactMCPID,currentUserContact.cr139_certificationid);
+        Set(LabelName,"Update Form");
+        Set(ErrorMsg,"false")
+    StartScreen: =
+

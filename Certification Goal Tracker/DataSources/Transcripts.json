@@ -1,0 +1,101 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "msdyn_transcripts",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "msdyn_transcript",
+    "MaxGetRowsCount": 500,
+    "Name": "Transcripts",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "{Attachments}": "Attachments",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "msdyn_LiveWorkItemIdId": "LiveWorkItemId",
+      "msdyn_name": "Name",
+      "msdyn_transcript_Annotations": "Notes",
+      "msdyn_transcript_AsyncOperations": "System Jobs",
+      "msdyn_transcript_BulkDeleteFailures": "Bulk Delete Failures",
+      "msdyn_transcript_FileAttachments": "FileAttachments",
+      "msdyn_transcript_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "msdyn_transcript_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "msdyn_transcript_ProcessSession": "Process Sessions",
+      "msdyn_transcript_SyncErrors": "Sync Errors",
+      "msdyn_transcriptid": "Transcript",
+      "msdyn_voicetranscript": "Voice Transcript file",
+      "msdyn_voicetranscript_formatted": "Formatted Voice Transcript file",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Transcripts",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Transcripts (Views)",
+    "Name": "_msdyn_transcript_views",
+    "RelatedEntityName": "Transcripts",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "1e75dece-60b5-4622-a229-b93f49c83c57": "Inactive Transcripts",
+      "2249f7f4-8fb5-4ac4-ad48-bcebc0fb34a8": "Transcript Advanced Find View",
+      "6e3fc3dd-b8a4-4a2f-8358-ba958c8b9fc4": "Transcript Lookup View",
+      "92b8c8d7-8a24-4518-b005-e81f2ea8db43": "Transcript Associated View",
+      "f50f0608-75b5-4a84-9304-d943708bf615": "Active Transcripts"
+    }
+  },
+  {
+    "DisplayName": "Status (Transcripts)",
+    "Name": "msdyn_transcript_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Transcripts"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Transcripts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Transcripts)",
+    "Name": "msdyn_transcript_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Transcripts"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Transcripts",
+    "Type": "OptionSetInfo"
+  }
+]

@@ -1,0 +1,121 @@
+{
+  "6c8812f5-e822-4221-86da-3edc8ff47818": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Premium",
+      "bypassConsent": true,
+      "displayName": "Microsoft Dataverse",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1588/1.0.1588.2938/commondataserviceforapps/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_commondataserviceforapps",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "f065b2d9-69a4-42a7-92f3-3f785dc28428"
+    ],
+    "id": "6c8812f5-e822-4221-86da-3edc8ff47818"
+  },
+  "7103e983-aebf-477b-9c39-a99473b19cda": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Office 365 Users",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1593/1.0.1593.2980/office365users/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365users",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "f065b2d9-69a4-42a7-92f3-3f785dc28428"
+    ],
+    "id": "7103e983-aebf-477b-9c39-a99473b19cda"
+  },
+  "7298a6d6-6e97-4378-bd47-0078dd4b6494": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Azure AD",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1600/1.0.1600.3026/azuread/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_azuread",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "f065b2d9-69a4-42a7-92f3-3f785dc28428"
+    ],
+    "id": "7298a6d6-6e97-4378-bd47-0078dd4b6494"
+  },
+  "f065b2d9-69a4-42a7-92f3-3f785dc28428": {
+    "connectionParameters": {},
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1534/1.0.1534.2605/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "6c8812f5-e822-4221-86da-3edc8ff47818": {
+          "value": "shared_commondataserviceforapps"
+        },
+        "7103e983-aebf-477b-9c39-a99473b19cda": {
+          "value": "shared_office365users"
+        },
+        "7298a6d6-6e97-4378-bd47-0078dd4b6494": {
+          "value": "shared_azuread"
+        },
+        "workflowEntityId": {
+          "value": "3ea2292c-16b0-ec11-9840-000d3a3491b7"
+        },
+        "workflowName": {
+          "value": "3701b0ab-d284-438b-aa98-23c512ddce6b"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_azuread": {
+          "value": "7298a6d6-6e97-4378-bd47-0078dd4b6494"
+        },
+        "shared_commondataserviceforapps": {
+          "value": "6c8812f5-e822-4221-86da-3edc8ff47818"
+        },
+        "shared_commondataserviceforapps_1": {
+          "value": "6c8812f5-e822-4221-86da-3edc8ff47818"
+        },
+        "shared_office365users": {
+          "value": "7103e983-aebf-477b-9c39-a99473b19cda"
+        },
+        "workflowEntityId": {
+          "value": "3ea2292c-16b0-ec11-9840-000d3a3491b7"
+        },
+        "workflowName": {
+          "value": "3701b0ab-d284-438b-aa98-23c512ddce6b"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "AddCertificateRecords"
+    ],
+    "dependencies": {
+      "shared_azuread": "7298a6d6-6e97-4378-bd47-0078dd4b6494",
+      "shared_commondataserviceforapps": "6c8812f5-e822-4221-86da-3edc8ff47818",
+      "shared_commondataserviceforapps_1": "6c8812f5-e822-4221-86da-3edc8ff47818",
+      "shared_office365users": "7103e983-aebf-477b-9c39-a99473b19cda"
+    },
+    "dependents": [],
+    "id": "f065b2d9-69a4-42a7-92f3-3f785dc28428"
+  }
+}

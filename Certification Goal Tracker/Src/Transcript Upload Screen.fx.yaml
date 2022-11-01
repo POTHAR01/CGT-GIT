@@ -1,0 +1,252 @@
+"'Transcript Upload Screen' As screen.'tabletAutoLayout_Sidebar_ver1.0'":
+    OnVisible: =Reset('Certificate Processor')
+
+    "'Certification Details' As dataTable.datatable":
+        BorderStyle: =BorderStyle.Solid
+        BorderThickness: =0
+        DisplayMode: =DisplayMode.Edit
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =497
+        Items: ='Certificate Processor'.Results.Exams
+        NoDataText: ="Upload your transcript to view Exam Details"
+        Width: =950
+        X: =415
+        Y: =219
+        ZIndex: =1
+
+        "'Exam Code_Column1' As dataTableColumn.textualColumn":
+            AutoWidth: =false
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Exam Code"
+            FieldName: ="Exam Code"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =1
+            Text: =ThisItem.'Exam Code'.Value
+            Width: =130
+            X: =20
+            Y: =0
+            ZIndex: =6
+
+        "'Exam Name_Column1' As dataTableColumn.textualColumn":
+            AutoWidth: =false
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Exam Name"
+            FieldName: ="Exam Name"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =2
+            Text: =ThisItem.'Exam Name'.Value
+            Width: =650
+            X: =16
+            Y: =0
+            ZIndex: =7
+
+        "'Date Completed_Column1' As dataTableColumn.textualColumn":
+            AutoWidth: =false
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Date Completed"
+            FieldName: ="Date Completed"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =3
+            Text: =ThisItem.'Date Completed'.Value
+            Width: =158
+            X: =770
+            Y: =0
+            ZIndex: =8
+
+    "'Certificate Processor' As FormProcessor":
+        BorderColor: =RGBA(210, 208, 206, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayMode: =DisplayMode.Edit
+        FillColor: =RGBA(50, 86, 160, 1)
+        FontColor: =RGBA(255, 255, 255, 1)
+        Height: =651
+        ModelId: ="Transcript Scanner (407cee09-77bc-42f4-86c5-4ed1a9bd4147)"
+        OnChange: |-
+            =If(
+                !IsBlank('Certificate Processor'.Results.'Microsoft Certification ID'.Value),
+                If(
+                    'Certificate Processor'.Results.'Microsoft Certification ID'.Value <> 'MCP ID Value'.Text,
+                    Notify(
+                        "Given MCID is incorrect",
+                        NotificationType.Error
+                    )
+                )
+            );
+        ShowBoundingBoxes: =false
+        ShowConfidence: =false
+        Text: ="Click here to Upload Transcript"
+        Visible: =true
+        Width: =413
+        X: =0
+        Y: =65
+        ZIndex: =2
+
+    "'Contact Details Label' As label":
+        FontWeight: =FontWeight.Bold
+        Size: =18
+        Text: ="Contact Details"
+        Width: =400
+        X: =415
+        Y: =78
+        ZIndex: =3
+
+    "'Contact Name Label' As label":
+        Size: =15
+        Text: |-
+            ="Name:"
+        Width: =130
+        X: =415
+        Y: =118
+        ZIndex: =4
+
+    "'Contact Name Value' As label":
+        Size: =15
+        Text: ='Certificate Processor'.Fields.'Full Name'
+        Width: =450
+        X: =550
+        Y: =118
+        ZIndex: =5
+
+    "'MCP ID Label' As label":
+        Size: =15
+        Text: |-
+            ="MCID:"
+        Width: =130
+        X: =415
+        Y: =161
+        ZIndex: =6
+
+    "'MCP ID Value' As label":
+        Size: =15
+        Text: ='Certificate Processor'.Fields.'Microsoft Certification ID'
+        Width: =450
+        X: =550
+        Y: =161
+        ZIndex: =7
+
+    "'Screen 2 Header' As label":
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(56, 96, 178, 1)
+        Height: =65
+        Size: =20
+        Text: ="Certification Goal Tracker"
+        Width: =1366
+        ZIndex: =8
+
+    "'Screen 2 Footer' As label":
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(56, 96, 178, 1)
+        Height: =52
+        OnSelect: =
+        Size: =20
+        Text: =""
+        Width: =1366
+        Y: =716
+        ZIndex: =9
+
+    BackIcon_1 As icon.BackArrow:
+        AccessibleLabel: ="Back"
+        BorderColor: =
+        BorderStyle: =
+        BorderThickness: =
+        Color: =RGBA(255, 255, 255, 0.83)
+        DisabledBorderColor: =
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        FocusedBorderColor: =
+        FocusedBorderThickness: =
+        Height: =45
+        HoverBorderColor: =
+        HoverColor: =RGBA(0, 0, 0, 0.5)
+        Icon: =Icon.BackArrow
+        OnSelect: =Navigate('Selection of Type of Certificate', ScreenTransition.Fade);
+        PressedBorderColor: =
+        PressedColor: =RGBA(0, 0, 0, 0.3)
+        TabIndex: =1
+        Tooltip: ="Back to Home Screen"
+        Width: =45
+        X: =8
+        Y: =719
+        ZIndex: =10
+
+    Label3_2 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(56, 96, 178, 1)
+        Text: ="Previous"
+        X: =55
+        Y: =720
+        ZIndex: =11
+
+    Label2 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =45
+        Size: =15
+        Text: ="Is any of your completed Exams are missing ?"
+        Visible: =If(!IsBlank('MCP ID Value'),true,false)
+        Width: =449
+        X: =435
+        Y: =719
+        ZIndex: =17
+
+    Button2 As button:
+        Height: =38
+        OnSelect: |-
+            =AddCertificateRecords.Run(
+                        'Certificate Processor'.OriginalImage,     
+                        'Certificate Processor'.Results.'Microsoft Certification ID'.Value,
+                        User().Email,JSON('Certificate Processor'.Results.Exams)
+                    ).returnvalue;
+                    
+            Set(
+                contactMCPID,
+                currentMCPValue.Text
+            );
+            
+            Navigate('Manual Transcript Upload Screen',Fade);
+        Text: ="YES"
+        Visible: =If(!IsBlank('MCP ID Value') ,true,false)
+        Width: =80
+        X: =899
+        Y: =724
+        ZIndex: =18
+
+    Button2_1 As button:
+        Height: =38
+        OnSelect: |
+            =Navigate('Upload Status Screen');
+            ClearCollect(abc,AddCertificateRecords.Run(
+                        'Certificate Processor'.OriginalImage,     
+                        'Certificate Processor'.Results.'Microsoft Certification ID'.Value,
+                        User().Email,JSON('Certificate Processor'.Results.Exams)
+                    ));
+            
+                    
+            Set(
+                contactMCPID,
+                currentMCPValue.Text
+            );
+            
+            If(
+                AddCertificateRecords.Run(
+                    'Certificate Processor'.OriginalImage,     
+                        'Certificate Processor'.Results.'Microsoft Certification ID'.Value,
+                        User().Email,JSON('Certificate Processor'.Results.Exams)
+                ).returnvalue= "Success",Navigate('Success Screen'));
+        Text: ="NO"
+        Visible: =If(!IsBlank('MCP ID Value') ,true,false)
+        Width: =80
+        X: =1000
+        Y: =724
+        ZIndex: =19
+

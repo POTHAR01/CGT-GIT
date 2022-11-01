@@ -1,0 +1,113 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr139_certificates",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr139_certificate",
+    "MaxGetRowsCount": 500,
+    "Name": "Individual Certificates",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "{Attachments}": "Attachments",
+      "cr139_certificate_Annotations": "Notes",
+      "cr139_certificate_AsyncOperations": "System Jobs",
+      "cr139_certificate_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr139_certificate_DuplicateBaseRecord": "Duplicate Records (cr139_certificate_DuplicateBaseRecord)",
+      "cr139_certificate_DuplicateMatchingRecord": "Duplicate Records (cr139_certificate_DuplicateMatchingRecord)",
+      "cr139_certificate_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr139_certificate_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr139_certificate_ProcessSession": "Process Sessions",
+      "cr139_certificate_SharePointDocumentLocations": "Document Locations",
+      "cr139_certificate_SyncErrors": "Sync Errors",
+      "cr139_certificateid": "Certificate",
+      "cr139_Contact": "Contact",
+      "cr139_datecompleted": "Date Completed",
+      "cr139_ExamCode": "Exam Name",
+      "cr139_examcode_": "Exam Code",
+      "cr139_name": "Name",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "sag_comments": "Comments",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Individual Certificates",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Individual Certificates (Views)",
+    "Name": "_cr139_certificate_views",
+    "RelatedEntityName": "Individual Certificates",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "228ff861-90e5-ec11-bb3c-002248069a99": "New Certificates Completed This Year",
+      "29b00b0b-223f-ed11-9db0-000d3a338226": "All Certificates",
+      "46f5291f-b6eb-ec11-bb3d-00224808ec4f": "New Certificates Completed This Month",
+      "8a9fcf5e-7816-43e8-9dec-8c74c653fab1": "Active Certificates",
+      "8be5dea0-123f-43d3-82ee-16e678f18b27": "Certificate Advanced Find View",
+      "b5e4aefe-d3eb-ec11-bb3d-00224808e168": "New Certificates Uploaded This Month",
+      "c243d5e0-a138-40d6-925e-283f1b01ad61": "Inactive Certificates",
+      "cfcc16f7-7aa0-44e0-b1e1-837df086bda8": "Certificate Associated View",
+      "ee4345db-d3eb-ec11-bb3d-00224808e168": "New Certificates Uploaded This Year",
+      "f23cb5aa-8db0-4e16-9ce2-46626729849b": "Certificate Lookup View"
+    }
+  },
+  {
+    "DisplayName": "Status (Individual Certificates)",
+    "Name": "cr139_certificate_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Individual Certificates"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Individual Certificates",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Individual Certificates)",
+    "Name": "cr139_certificate_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Not Started",
+      "2": "Completed",
+      "3": "Pending Review",
+      "4": "Rejected",
+      "5": "Suspended"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Individual Certificates"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Individual Certificates",
+    "Type": "OptionSetInfo"
+  }
+]

@@ -1,0 +1,112 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr139_certificategoals",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr139_certificategoal",
+    "MaxGetRowsCount": 500,
+    "Name": "Certificate Goals",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "{Attachments}": "Attachments",
+      "cr139_certificategoal_Annotations": "Notes",
+      "cr139_certificategoal_AsyncOperations": "System Jobs",
+      "cr139_certificategoal_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr139_certificategoal_DuplicateBaseRecord": "Duplicate Records (cr139_certificategoal_DuplicateBaseRecord)",
+      "cr139_certificategoal_DuplicateMatchingRecord": "Duplicate Records (cr139_certificategoal_DuplicateMatchingRecord)",
+      "cr139_certificategoal_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr139_certificategoal_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr139_certificategoal_ProcessSession": "Process Sessions",
+      "cr139_certificategoal_SyncErrors": "Sync Errors",
+      "cr139_certificategoal_Teams": "Teams",
+      "cr139_certificategoalid": "Certificate Goal",
+      "cr139_CertificationGoalsId": "Certificate Goal Matrix",
+      "cr139_Contact": "Contact",
+      "cr139_datecompleted": "Date Completed",
+      "cr139_ExamCode": "Exam Name",
+      "cr139_IndividualGoal": "Individual Goal",
+      "cr139_name": "Goal Name",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "sag_sag_transcriptattachment_CertificateGoal_": "Transcript Attachments",
+      "sag_TranscriptRecord": "Transcript Record",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Certificate Goals",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Certificate Goals (Views)",
+    "Name": "_cr139_certificategoal_views",
+    "RelatedEntityName": "Certificate Goals",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "1e4839fa-9241-47bb-816c-8ae3b2512f9c": "Certificate Goal Advanced Find View",
+      "259a9f07-d2eb-ec11-bb3d-00224808ed36": "Current Month Certificate Goal",
+      "2998edf7-c9e0-ec11-bb3d-002248041efa": "Current Year Certificate Goal",
+      "2c21f76c-5a0e-4a81-a83f-f208c0da8854": "Active Certificate Goals",
+      "81cb0166-117e-4e43-8d31-38e73cece093": "Certificate Goal Associated View",
+      "8986baca-e6eb-ec11-bb3d-00224808e168": "Current Year Completed Certificate Goals",
+      "cd0210c6-0293-4a3f-a571-0ac92ec32fd8": "Certificate Goal Lookup View",
+      "f6728a6b-e119-4a73-894f-42c6ba4301e3": "Inactive Certificate Goals"
+    }
+  },
+  {
+    "DisplayName": "Status (Certificate Goals)",
+    "Name": "cr139_certificategoal_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Certificate Goals"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Certificate Goals",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Certificate Goals)",
+    "Name": "cr139_certificategoal_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "In Progress",
+      "2": "Completed",
+      "3": "Suspended",
+      "4": "Removed"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Certificate Goals"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Certificate Goals",
+    "Type": "OptionSetInfo"
+  }
+]

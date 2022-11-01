@@ -1,0 +1,10 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_logicflows",
+    "FlowNameId": "540eb72c-3a12-430b-abb8-8759ab2be1f9",
+    "Name": "AddCertificateRecords",
+    "ServiceKind": "ConnectedWadl",
+    "Type": "ServiceInfo",
+    "WorkflowEntityId": "3ea2292c-16b0-ec11-9840-000d3a3491b7"
+  }
+]

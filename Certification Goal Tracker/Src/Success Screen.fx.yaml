@@ -1,0 +1,74 @@
+"'Success Screen' As screen.'tabletLayout_Success_ver3.0'":
+
+    LblSuccessMsg1 As label:
+        Align: =Align.Center
+        AutoHeight: =true
+        Height: =200
+        Size: =20
+        Text: ="Thanks for Uploading Your transcript , We wil Notify You Status of Transcript"
+        Width: =Parent.Width * 0.75
+        X: =Parent.Width/2 - Self.Width/2
+        Y: =419
+        ZIndex: =3
+
+    "'Screen 3 Header' As label":
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(56, 96, 178, 1)
+        Height: =65
+        Size: =20
+        Text: ="Certification Goal Tracker"
+        Width: =1366
+        ZIndex: =4
+
+    "'Screen 3 Footer' As label":
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(56, 96, 178, 1)
+        Height: =52
+        Size: =20
+        Text: =""
+        Width: =1366
+        Y: =716
+        ZIndex: =5
+
+    Image2 As image:
+        DisplayMode: =DisplayMode.View
+        Height: =186
+        Image: =successful
+        Width: =178
+        X: =593
+        Y: =209
+        ZIndex: =8
+
+    NextIcon_1 As icon.NextArrow:
+        AccessibleLabel: ="Next"
+        BorderColor: =
+        BorderStyle: =
+        BorderThickness: =
+        Color: =RGBA(255, 255, 255, 83)
+        DisabledBorderColor: =
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisplayMode: =If(IsBlank(currentMCPValue),DisplayMode.Disabled, DisplayMode.Edit)
+        FocusedBorderColor: =
+        FocusedBorderThickness: =
+        Height: =45
+        HoverBorderColor: =
+        HoverColor: =RGBA(0, 0, 0, 0.5)
+        Icon: =Icon.NextArrow
+        OnSelect: |-
+            =Navigate(
+                'User Info Screen',
+                ScreenTransition.Fade
+            );
+        PressedBorderColor: =
+        PressedColor: =RGBA(0, 0, 0, 0.3)
+        TabIndex: =0
+        Tooltip: =If(IsBlank( currentUserContact.cr139_certificationid),"Please enter your MCP ID to proceed","Please proceed next to Upload your MS transcript")
+        Width: =45
+        X: =1312
+        Y: =719
+        ZIndex: =9
+

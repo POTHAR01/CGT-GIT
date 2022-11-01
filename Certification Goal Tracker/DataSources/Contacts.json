@@ -1,0 +1,2427 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "contacts",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "contact",
+    "MaxGetRowsCount": 500,
+    "Name": "Contacts",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "_parentcustomerid_value": "Company Name",
+      "{Attachments}": "Attachments",
+      "account_primary_contact": "Accounts",
+      "accountrolecode": "Role",
+      "address1_addresstypecode": "Address 1: Address Type",
+      "address1_city": "City",
+      "address1_composite": "Address 1",
+      "address1_country": "Country (address1_country)",
+      "address1_county": "Address 1: County",
+      "address1_fax": "Address 1: Fax",
+      "address1_freighttermscode": "Address 1: Freight Terms",
+      "address1_latitude": "Address 1: Latitude",
+      "address1_line1": "Street address 1",
+      "address1_line2": "Street address 2",
+      "address1_line3": "Address 1: Street 3",
+      "address1_longitude": "Address 1: Longitude",
+      "address1_name": "Address 1: Name",
+      "address1_postalcode": "ZIP Code",
+      "address1_postofficebox": "Address 1: Post Office Box",
+      "address1_primarycontactname": "Address 1: Primary Contact Name",
+      "address1_shippingmethodcode": "Address 1: Shipping Method",
+      "address1_stateorprovince": "State",
+      "address1_telephone1": "Address 1: Phone",
+      "address1_telephone2": "Address 1: Telephone 2",
+      "address1_telephone3": "Address 1: Telephone 3",
+      "address1_upszone": "Address 1: UPS Zone",
+      "address1_utcoffset": "Address 1: UTC Offset",
+      "address2_addresstypecode": "Address 2: Address Type",
+      "address2_city": "Address 2: City",
+      "address2_composite": "Address 2",
+      "address2_country": "Address 2: Country/Region",
+      "address2_county": "Address 2: County",
+      "address2_fax": "Address 2: Fax",
+      "address2_freighttermscode": "Address 2: Freight Terms",
+      "address2_latitude": "Address 2: Latitude",
+      "address2_line1": "Address 2: Street 1",
+      "address2_line2": "Address 2: Street 2",
+      "address2_line3": "Address 2: Street 3",
+      "address2_longitude": "Address 2: Longitude",
+      "address2_name": "Address 2: Name",
+      "address2_postalcode": "Address 2: ZIP/Postal Code",
+      "address2_postofficebox": "Address 2: Post Office Box",
+      "address2_primarycontactname": "Address 2: Primary Contact Name",
+      "address2_shippingmethodcode": "Address 2: Shipping Method",
+      "address2_stateorprovince": "Address 2: State/Province",
+      "address2_telephone1": "Address 2: Telephone 1",
+      "address2_telephone2": "Address 2: Telephone 2",
+      "address2_telephone3": "Address 2: Telephone 3",
+      "address2_upszone": "Address 2: UPS Zone",
+      "address2_utcoffset": "Address 2: UTC Offset",
+      "address3_addresstypecode": "Address 3: Address Type",
+      "address3_city": "Address 3: City",
+      "address3_composite": "Address 3",
+      "address3_country": "Address3: Country/Region",
+      "address3_county": "Address 3: County",
+      "address3_fax": "Address 3: Fax",
+      "address3_freighttermscode": "Address 3: Freight Terms",
+      "address3_latitude": "Address 3: Latitude",
+      "address3_line1": "Address3: Street 1",
+      "address3_line2": "Address3: Street 2",
+      "address3_line3": "Address3: Street 3",
+      "address3_longitude": "Address 3: Longitude",
+      "address3_name": "Address 3: Name",
+      "address3_postalcode": "Address3: ZIP/Postal Code",
+      "address3_postofficebox": "Address 3: Post Office Box",
+      "address3_primarycontactname": "Address 3: Primary Contact Name",
+      "address3_shippingmethodcode": "Address 3: Shipping Method",
+      "address3_stateorprovince": "Address3: State/Province",
+      "address3_telephone1": "Address 3: Telephone1",
+      "address3_telephone2": "Address 3: Telephone2",
+      "address3_telephone3": "Address 3: Telephone3",
+      "address3_upszone": "Address 3: UPS Zone",
+      "address3_utcoffset": "Address 3: UTC Offset",
+      "adx_changedcontact_webpagehistory": "Web Page History",
+      "adx_communityforumthread_contact": "Forum Threads",
+      "adx_confirmremovepassword": "Confirm Remove Password",
+      "adx_contact_adx_casedeflection_Contact": "Case Deflections",
+      "adx_contact_communityforumalert": "Forum Alerts",
+      "adx_contact_communityforumannouncement": "Forum Announcements",
+      "adx_contact_communityforumpost": "Forum Posts",
+      "adx_contact_externalidentity": "External Identities",
+      "adx_contact_forumnotification": "Forum Notifications",
+      "adx_contact_pagenotification": "Page Notifications",
+      "adx_contact_pollsubmission": "Poll Submissions",
+      "adx_contact_webfilelog": "Web File Logs",
+      "adx_contact_webpage": "Web Pages",
+      "adx_contact_webpagelog": "Web Page Logs",
+      "adx_ContactContentAccessLevel": "Content Access Levels",
+      "adx_contactproduct": "Products",
+      "adx_createdbyipaddress": "Created By IP Address",
+      "adx_createdbyusername": "Created By Username",
+      "adx_forum_activityalert": "Forums",
+      "adx_identity_accessfailedcount": "Access Failed Count",
+      "adx_identity_emailaddress1confirmed": "Email Confirmed",
+      "adx_identity_lastsuccessfullogin": "Last Successful Login",
+      "adx_identity_locallogindisabled": "Local Login Disabled",
+      "adx_identity_lockoutenabled": "Lockout Enabled",
+      "adx_identity_lockoutenddate": "Lockout End Date",
+      "adx_identity_logonenabled": "Login Enabled",
+      "adx_identity_mobilephoneconfirmed": "Mobile Phone Confirmed",
+      "adx_identity_newpassword": "New Password Input",
+      "adx_identity_passwordhash": "Password Hash",
+      "adx_identity_securitystamp": "Security Stamp",
+      "adx_identity_twofactorenabled": "Two Factor Enabled",
+      "adx_identity_username": "User Name",
+      "adx_invitation_invitecontact": "Invitations (adx_invitation_invitecontact)",
+      "adx_invitation_invitecontacts": "Invitations (adx_invitation_invitecontacts)",
+      "adx_invitation_invitercontact": "Invitations (adx_invitation_invitercontact)",
+      "adx_invitation_redeemedContact": "Invitations (adx_invitation_redeemedContact)",
+      "adx_invitation_redeemedcontacts": "Invitations (adx_invitation_redeemedcontacts)",
+      "adx_modifiedbyipaddress": "Modified By IP Address",
+      "adx_modifiedbyusername": "Modified By Username",
+      "adx_organizationname": "Organization Name",
+      "adx_preferredlanguageid": "Preferred Language",
+      "adx_profilealert": "Profile Alert",
+      "adx_profilealertdate": "Profile Alert Date",
+      "adx_profilealertinstructions": "Profile Alert Instructions",
+      "adx_profileisanonymous": "Profile Is Anonymous",
+      "adx_profilelastactivity": "Profile Last Activity",
+      "adx_profilemodifiedon": "Profile Modified On",
+      "adx_publicprofilecopy": "Public Profile Copy",
+      "adx_subscribercontact_pagealert": "Page Alerts",
+      "adx_timezone": "Time Zone",
+      "adx_webformsession_contact": "Advanced Form Sessions",
+      "adx_webrole_contact": "Web Roles",
+      "aging30": "Aging 30",
+      "aging30_base": "Aging 30 (Base)",
+      "aging60": "Aging 60",
+      "aging60_base": "Aging 60 (Base)",
+      "aging90": "Aging 90",
+      "aging90_base": "Aging 90 (Base)",
+      "anniversary": "Anniversary",
+      "annualincome": "Annual Income",
+      "annualincome_base": "Annual Income (Base)",
+      "assistantname": "Assistant",
+      "assistantphone": "Assistant Phone",
+      "birthdate": "Birthday",
+      "bpf_contact_adx_bpf_c2857b638fa7473d8e2f112c232cebd8": "Change Password for Portals Contact",
+      "BulkOperation_Logs_Contacts": "Quick Campaigns (BulkOperation_Logs_Contacts)",
+      "business2": "Phone number",
+      "businesscard": "Business Card",
+      "businesscardattributes": "BusinessCardAttributes",
+      "callback": "Callback Number",
+      "CampaignActivity_Logs_Contacts": "Campaign Activities",
+      "childrensnames": "Children's Names",
+      "company": "Company Phone",
+      "contact_actioncard": "Action Cards",
+      "Contact_ActivityPointers": "Activities",
+      "contact_adx_alertsubscriptions": "Alert Subscriptions",
+      "contact_adx_inviteredemptions": "Invite Redemptions",
+      "contact_adx_portalcomments": "Portal Comments",
+      "Contact_Annotation": "Notes",
+      "Contact_Appointments": "Appointments (Contact_Appointments)",
+      "contact_as_primary_contact": "Cases (contact_as_primary_contact)",
+      "contact_as_responsible_contact": "Cases (contact_as_responsible_contact)",
+      "Contact_AsyncOperations": "System Jobs",
+      "contact_bookableresource_ContactId": "Bookable Resources",
+      "Contact_BulkDeleteFailures": "Bulk Delete Failures",
+      "contact_BulkOperations": "Quick Campaigns (contact_BulkOperations)",
+      "contact_CampaignResponses": "Campaign Responses",
+      "contact_chats": "Teams chats",
+      "contact_connections1": "Connections (contact_connections1)",
+      "contact_connections2": "Connections (contact_connections2)",
+      "contact_customer_contacts": "Contacts (contact_customer_contacts)",
+      "Contact_CustomerAddress": "Addresses",
+      "Contact_DuplicateBaseRecord": "Duplicate Records (Contact_DuplicateBaseRecord)",
+      "Contact_DuplicateMatchingRecord": "Duplicate Records (Contact_DuplicateMatchingRecord)",
+      "Contact_Email_EmailSender": "Email Messages (Contact_Email_EmailSender)",
+      "Contact_Emails": "Email Messages (Contact_Emails)",
+      "contact_entitlement_ContactId": "Entitlements (contact_entitlement_ContactId)",
+      "contact_entitlement_Customer": "Entitlements (contact_entitlement_Customer)",
+      "Contact_Faxes": "Faxes",
+      "Contact_Feedback": "Feedback (Contact_Feedback)",
+      "contact_FileAttachments": "FileAttachments",
+      "Contact_Letters": "Letters",
+      "contact_li_inmails": "inMails",
+      "contact_li_messages": "Messages",
+      "contact_li_pointdrivepresentationvieweds": "Smart Links Content Viewed",
+      "Contact_MailboxTrackingFolder": "Mailbox Auto Tracking Folders",
+      "contact_master_contact": "Contacts (contact_master_contact)",
+      "contact_msdyn_bookingalerts": "Booking Alerts",
+      "contact_msdyn_ocliveworkitems": "Conversations (contact_msdyn_ocliveworkitems)",
+      "contact_msdyn_ocoutboundmessages": "Outbound messages",
+      "contact_msdyn_ocsessions": "Sessions",
+      "contact_msfp_alerts": "Customer Voice alert",
+      "contact_msfp_surveyinvites": "Customer Voice survey invites",
+      "contact_msfp_surveyresponses": "Customer Voice survey responses",
+      "contact_parent_contact": "Contacts (contact_parent_contact)",
+      "Contact_Phonecalls": "Phone Calls",
+      "contact_PostFollows": "Follows",
+      "contact_PostRegardings": "Post Regarding",
+      "contact_Posts": "Posts",
+      "contact_principalobjectattributeaccess": "Field Sharing",
+      "Contact_ProcessSessions": "Process Sessions",
+      "Contact_RecurringAppointmentMasters": "Recurring Appointments",
+      "Contact_ServiceAppointments": "Service Activities",
+      "Contact_SocialActivities": "Social Activities (Contact_SocialActivities)",
+      "Contact_SyncErrors": "Sync Errors",
+      "Contact_Tasks": "Tasks",
+      "contact_Teams": "Teams",
+      "contactid": "Contact",
+      "contactinvoices_association": "Invoices (contactinvoices_association)",
+      "contactleads_association": "Leads (contactleads_association)",
+      "contactorders_association": "Orders (contactorders_association)",
+      "contactquotes_association": "Quotes (contactquotes_association)",
+      "contract_billingcustomer_contacts": "Contracts (contract_billingcustomer_contacts)",
+      "contract_customer_contacts": "Contracts (contract_customer_contacts)",
+      "contractlineitem_customer_contacts": "Contract Lines",
+      "cr139_CertificateGoal_Contact_Contact": "Certificate Goals",
+      "cr139_certificationid": "MCID",
+      "cr139_contact_cr139_certificate_Contact": "Individual Certificates",
+      "cr139_contact_cr139_certificategoalmatrix": "Certificate Goal Matrixes",
+      "cr139_contact_Mentor_contact": "Contacts (cr139_contact_Mentor_contact)",
+      "cr139_contact_PYManager_contact": "Contacts (cr139_contact_PYManager_contact)",
+      "cr139_contact_Supervisor_contact": "Contacts (cr139_contact_Supervisor_contact)",
+      "cr139_Country": "Country (cr139_Country)",
+      "cr139_Department": "Skill COE",
+      "cr139_issagemployee": "Internal Employee",
+      "cr139_level": "Level",
+      "cr139_Manager": "Supervisor",
+      "cr139_Mentor": "Mentor (Contact)",
+      "cr139_Mentoruser": "Mentor",
+      "cr139_optionsetfield": "optionsetfield",
+      "cr139_PrimaryRole": "Primary Role",
+      "cr139_PYManager": "PY Manager (Contact)",
+      "cr139_PYManageruser": "PY Manager",
+      "cr139_Supervisor": "Supervisor (Contact)",
+      "cr139_transcript": "Transcript",
+      "cr139_UserRecord": "User Record",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "creditlimit": "Credit Limit",
+      "creditlimit_base": "Credit Limit (Base)",
+      "creditonhold": "Credit Hold",
+      "customersizecode": "Customer Size",
+      "customertypecode": "Relationship Type",
+      "defaultpricelevelid": "Price List",
+      "department": "Department",
+      "description": "Description",
+      "donotbulkemail": "Do not allow Bulk Emails",
+      "donotbulkpostalmail": "Do not allow Bulk Mails",
+      "donotemail": "Do not allow Emails",
+      "donotfax": "Do not allow Faxes",
+      "donotphone": "Do not allow Phone Calls",
+      "donotpostalmail": "Do not allow Mails",
+      "donotsendmm": "Send Marketing Materials",
+      "educationcode": "Education (educationcode)",
+      "emailaddress1": "Email",
+      "emailaddress2": "MCP Email",
+      "emailaddress3": "Email Address 3",
+      "employeeid": "Employee",
+      "entitlementcontacts_association": "Entitlements (entitlementcontacts_association)",
+      "entityimage": "Entity Image",
+      "entityimageid": "Entity Image Id",
+      "exchangerate": "Exchange Rate",
+      "externaluseridentifier": "External User Identifier",
+      "familystatuscode": "Marital Status",
+      "fax": "Fax",
+      "firstname": "First name (firstname)",
+      "followemail": "Follow Email Activity",
+      "ftpsiteurl": "FTP Site",
+      "fullname": "Full Name",
+      "gendercode": "Gender",
+      "governmentid": "Government",
+      "haschildrencode": "Has Children",
+      "home2": "Home Phone 2",
+      "importsequencenumber": "Import Sequence Number",
+      "incident_customer_contacts": "Cases (incident_customer_contacts)",
+      "invoice_customer_contacts": "Invoices (invoice_customer_contacts)",
+      "isbackofficecustomer": "Back Office Customer",
+      "jobtitle": "Job Title",
+      "lastname": "Last name (lastname)",
+      "lastonholdtime": "Last On Hold Time",
+      "lastusedincampaign": "Last Date Included in Campaign",
+      "lead_customer_contacts": "Leads (lead_customer_contacts)",
+      "lead_parent_contact": "Leads (lead_parent_contact)",
+      "leadsourcecode": "Lead Source",
+      "listcontact_association": "Marketing Lists",
+      "lk_contact_feedback_createdby": "Feedback (lk_contact_feedback_createdby)",
+      "lk_contact_feedback_createdonbehalfby": "Feedback (lk_contact_feedback_createdonbehalfby)",
+      "managername": "Manager",
+      "managerphone": "Manager Phone",
+      "marketingonly": "Marketing Only",
+      "masterid": "Master ID",
+      "merged": "Merged",
+      "middlename": "Middle name",
+      "mobilephone": "Mobile Phone",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "msa_contact_incident": "Cases (msa_contact_incident)",
+      "msa_contact_opportunity": "Opportunities (msa_contact_opportunity)",
+      "msa_managingpartnerid": "Managing Partner",
+      "msdyn_accountnumber": "Account Number",
+      "msdyn_anniversaryday": "Anniversary Day",
+      "msdyn_anniversarymonth": "Anniversary Month",
+      "msdyn_anniversaryyear": "Anniversary Year",
+      "msdyn_AppointmentRequest_BankRepContact_C": "AppointmentRequests",
+      "msdyn_BankAppointment": "Bank Appointment",
+      "msdyn_birthday": "Birth Day (msdyn_birthday)",
+      "msdyn_birthmonth": "Birth Month (msdyn_birthmonth)",
+      "msdyn_birthyear": "Birth Year (msdyn_birthyear)",
+      "msdyn_company": "Company",
+      "msdyn_contact_msdyn_actual_ContactCustomer": "Actuals (msdyn_contact_msdyn_actual_ContactCustomer)",
+      "msdyn_contact_msdyn_actual_ContactVendor": "Actuals (msdyn_contact_msdyn_actual_ContactVendor)",
+      "msdyn_contact_msdyn_contactforparty_associatedcontactid": "Contacts For Party (msdyn_contact_msdyn_contactforparty_associatedcontactid)",
+      "msdyn_contact_msdyn_contactforparty_contactid": "Contacts For Party (msdyn_contact_msdyn_contactforparty_contactid)",
+      "msdyn_contact_msdyn_liveconversation_Customer": "Ongoing conversations (Deprecated)",
+      "msdyn_contact_msdyn_ocliveworkitem_Customer": "Conversations (msdyn_contact_msdyn_ocliveworkitem_Customer)",
+      "msdyn_contact_msdyn_purchaseorder_ContactPersonId": "Purchase Orders",
+      "msdyn_contact_msdyn_rma_RequestedByContact": "RMAs",
+      "msdyn_contact_msdyn_rtv_VendorContact": "RTVs",
+      "msdyn_contact_msdyn_salespremiumdemo_contact": "Sales Premium Demos",
+      "msdyn_contact_msdyn_vendor_linkedvendorincontactsentity": "Vendors (msdyn_contact_msdyn_vendor_linkedvendorincontactsentity)",
+      "msdyn_contact_msdyn_vendor_vendorprimarycontactperson": "Vendors (msdyn_contact_msdyn_vendor_vendorprimarycontactperson)",
+      "msdyn_contact_msdyn_workorder_ReportedByContact": "Work Orders",
+      "msdyn_contact_quote_contactperson": "Quotes (msdyn_contact_quote_contactperson)",
+      "msdyn_contact_quote_InvoiceCustomerId": "Quotes (msdyn_contact_quote_InvoiceCustomerId)",
+      "msdyn_contact_salesorder_ContactPerson": "Orders (msdyn_contact_salesorder_ContactPerson)",
+      "msdyn_contact_salesorder_InvoiceCustomerId": "Orders (msdyn_contact_salesorder_InvoiceCustomerId)",
+      "msdyn_contactfor": "Contact For",
+      "msdyn_contactforvendor": "Contact For Vendor",
+      "msdyn_contacthasnocompany": "Has No Company",
+      "msdyn_contactnumber": "Contact Number",
+      "msdyn_contactpersonid": "Account Number/Contact Person ID",
+      "msdyn_contacttype": "Contact Type",
+      "msdyn_customergroupid": "Customer Group Id",
+      "msdyn_customerpaymentmethod": "Customer Payment Method",
+      "msdyn_designation": "Designation",
+      "msdyn_disablewebtracking": "Disable Web Tracking",
+      "msdyn_emailaddress1description": "Email Description",
+      "msdyn_faxdescription": "Fax Description",
+      "msdyn_faxextension": "Fax Extension",
+      "msdyn_gdproptout": "GDPR Optout",
+      "msdyn_hobbies": "Hobbies",
+      "msdyn_identificationnumber": "Identification Number",
+      "msdyn_initials": "Initials",
+      "msdyn_Invoice_ContactPerson_Contact": "Invoices (msdyn_Invoice_ContactPerson_Contact)",
+      "msdyn_isminor": "Is Minor",
+      "msdyn_isminorwithparentalconsent": "Is Minor with Parental Consent",
+      "msdyn_isvendor": "Is Vendor",
+      "msdyn_language": "Language",
+      "msdyn_lastnameprefix": "Last Name Prefix",
+      "msdyn_linkedvendoraccount": "Linked Vendor Account",
+      "msdyn_msdyn_preferredagent_contact_msdyn_recordId": "Preferred Agents",
+      "msdyn_msdyn_taggedrecord_contact_msdyn_dynamicsrecordid": "Tagged Records",
+      "msdyn_namealias": "Search Name",
+      "msdyn_orgchangestatus": "Not at Company Flag",
+      "msdyn_partycountry": "Party Country",
+      "msdyn_partyid": "Party ID",
+      "msdyn_partynumber": "(Deprecated) Party Number",
+      "msdyn_partystateprovince": "Party State/Province",
+      "msdyn_paymentday": "Payment Day",
+      "msdyn_paymentschedule": "Payment Schedule",
+      "msdyn_paymentterms": "Terms of Payment",
+      "msdyn_personalsuffix": "Personal Suffix",
+      "msdyn_personaltitle": "Personal Title",
+      "msdyn_phoneticfirstname": "Phonetic First Name",
+      "msdyn_phoneticlastname": "Phonetic Last Name",
+      "msdyn_phoneticmiddlename": "Phonetic Middle Name",
+      "msdyn_phonetype": "Phone Type",
+      "msdyn_playbookinstance_contact": "Playbooks",
+      "msdyn_portaltermsagreementdate": "Portal Terms Agreement Date",
+      "msdyn_primarycontact": "Primary Contact",
+      "msdyn_primaryfacebookdescription": "(Deprecated) Primary Facebook Description",
+      "msdyn_primaryfacebookid": "(Deprecated) Primary Facebook ID",
+      "msdyn_primaryinkedinid": "(Deprecated) Primary LinkedIn ID",
+      "msdyn_primarylinkedindescrption": "(Deprecated) Primary LinkedIn Description",
+      "msdyn_primarytwitterid": "(Deprecated) Primary Twitter ID",
+      "msdyn_primarytwitteriddescription": "(Deprecated) Primary Twitter ID Description",
+      "msdyn_salestaxgroup": "Sales Tax Group",
+      "msdyn_segmentid": "Segment Id",
+      "msdyn_sellable": "Sellable",
+      "msdyn_sequencetarget_contact_msdyn_target": "Sequence Targets",
+      "msdyn_Specialties": "Specialties",
+      "msdyn_specialtieslist": "Specialties list",
+      "msdyn_specialtiessubcategory": "Specialties Subcategory",
+      "msdyn_telephone1description": "Phone Description",
+      "msdyn_telephone1extension": "Phone Extension",
+      "msdyn_vendorcontactid": "(Deprecated) Vendor Account",
+      "msdyn_vendorcreatedbyworkflow": "Vendor created by workflow",
+      "msdyn_vendorgroup": "Vendor Group",
+      "msdyn_vendorpaymentmethod": "Payment Method",
+      "msdyn_websiteurldescription": "Website Description",
+      "msdynce_address1street2": "Address 1: Street 2",
+      "msdynce_addressused": "AddressUsed",
+      "msdynce_Appointment_contact_Contact": "Appointments (msdynce_Appointment_contact_Contact)",
+      "msdynce_backgroundcheck": "Background check",
+      "msdynce_BankBranch": "Bank Branch",
+      "msdynce_BankBranchCode": "Bank Branch Code",
+      "msdynce_choosefile": "Choose file",
+      "msdynce_choosefileid": "msdynce_ChoosefileId",
+      "msdynce_completionpercentage": "Completion Percentage",
+      "msdynce_Contact_Hiringmanager_Contact": "Contacts (msdynce_Contact_Hiringmanager_Contact)",
+      "msdynce_contact_msdyn_availability_BankRep": "Availabilities (msdynce_contact_msdyn_availability_BankRep)",
+      "msdynce_Contact_msdyn_Service_msdyn_Service": "Services",
+      "msdynce_emergencyfirstname": "First name (msdynce_emergencyfirstname)",
+      "msdynce_emergencylastname": "Last name (msdynce_emergencylastname)",
+      "msdynce_entityimage_file_name": "entityimage_file_name",
+      "msdynce_entityimage_file_type": "entityimage_file_type",
+      "msdynce_expectedcompletiondate": "Expected Completion Date",
+      "msdynce_expectedcompletiondatevalue": "Expected Completion Date Value",
+      "msdynce_Hiringmanager": "Hiring manager",
+      "msdynce_image": "Image",
+      "msdynce_imageid": "msdynce_ImageId",
+      "msdynce_multidocumentfileupload": "Multi Document/File Upload (msdynce_multidocumentfileupload)",
+      "msdynce_multidocumentfileupload_1": "Multi Document/File Upload (msdynce_multidocumentfileupload_1)",
+      "msdynce_multidocumentfileupload_2": "Multi Document/File Upload (msdynce_multidocumentfileupload_2)",
+      "msdynce_photo": "Photo",
+      "msdynce_policy1": "Policy 1",
+      "msdynce_policy2": "Policy 2",
+      "msdynce_preferencesnotification": "Preferences Notification",
+      "msdynce_preferredname": "Preferred name",
+      "msdynce_previouslegalname": "Previous legal name",
+      "msdynce_relation": "Relation",
+      "msdynce_safetyguidelines": "Safety Guidelines",
+      "msdynce_scheduledrugtest": "Schedule drug test",
+      "msdynce_schedulephysicalabilitytest": "Schedule physical ability test",
+      "msdynce_selectedspecialties": "Selected Specialties",
+      "msdynce_signagreements": "Sign Agreements",
+      "msdynce_specialties": "Specialties Sub Category",
+      "msdynce_specialtiescategory": "Specialties Category",
+      "msdynce_workauthorization": "Work Authorization",
+      "msiati_contact_msiati_deliveryframeworkcontact_contactid": "Delivery Framework Contacts",
+      "msiati_contact_msiati_narrativetranslation": "Narrative Translations",
+      "msiati_contact_msiati_website_contactid": "Websites",
+      "msnfp_age": "Age",
+      "msnfp_anonymous": "Anonymous?",
+      "msnfp_birthday": "Birth Day (msnfp_birthday)",
+      "msnfp_birthmonth": "Birth Month (msnfp_birthmonth)",
+      "msnfp_birthyear": "Birth Year (msnfp_birthyear)",
+      "msnfp_commitment_pledgedByContact": "Donor Commitments",
+      "msnfp_contact_assistants": "Contacts (msnfp_contact_assistants)",
+      "msnfp_contact_award_InternalContactId": "Awards (msnfp_contact_award_InternalContactId)",
+      "msnfp_contact_award_Recipient": "Awards (msnfp_contact_award_Recipient)",
+      "msnfp_contact_awardversion_PrimaryContactId": "Award Versions (msnfp_contact_awardversion_PrimaryContactId)",
+      "msnfp_contact_awardversion_SubmittedById": "Award Versions (msnfp_contact_awardversion_SubmittedById)",
+      "msnfp_contact_disbursement_RecipientContactId": "Disbursements",
+      "msnfp_contact_docket_AwardRecipient": "Dockets (msnfp_contact_docket_AwardRecipient)",
+      "msnfp_contact_employmenthistory_ContactId": "Employment History",
+      "msnfp_contact_msnfp_availability_contactId": "Availabilities (msnfp_contact_msnfp_availability_contactId)",
+      "msnfp_contact_msnfp_award_RecommendedSupplier": "Awards (msnfp_contact_msnfp_award_RecommendedSupplier)",
+      "msnfp_contact_msnfp_benefitrecipient_beneficiary": "Benefit Recipients",
+      "msnfp_contact_msnfp_creditrecipient_Customer": "Credit Recipients",
+      "msnfp_contact_msnfp_docket_docket_fiscalSponsor": "Dockets (msnfp_contact_msnfp_docket_docket_fiscalSponsor)",
+      "msnfp_contact_msnfp_item_Supplier": "Items",
+      "msnfp_contact_msnfp_itemgroup_Supplier": "Item Groups",
+      "msnfp_contact_msnfp_membership_Customer": "Memberships",
+      "msnfp_contact_msnfp_need_Beneficiary": "Needs",
+      "msnfp_contact_msnfp_observation_contactid": "Observations",
+      "msnfp_contact_msnfp_ofacmatch_ofacMatch_customer": "OFAC Matches",
+      "msnfp_contact_msnfp_operation_contactId": "Operations",
+      "msnfp_contact_msnfp_participation_contactId": "Participations",
+      "msnfp_contact_msnfp_paymentmethod": "Payment Methods",
+      "msnfp_contact_msnfp_paymentschedule_DefaultHardCreditToCustomer": "Payment Schedules",
+      "msnfp_contact_msnfp_preference_preference_customer": "Preferences",
+      "msnfp_contact_msnfp_qualification_contactId": "Qualifications",
+      "msnfp_contact_msnfp_salutation_salutation_customer": "Salutations",
+      "msnfp_contact_msnfp_stakeholder_StakeholderName": "Stakeholders",
+      "msnfp_contact_msnfp_transaction": "Transactions",
+      "msnfp_contact_msnfp_workitem_Beneficiary": "Work Items",
+      "msnfp_contact_msnfp_workitemaction_Beneficiary": "Work Item Actions",
+      "msnfp_contact_reportsTo": "Contacts (msnfp_contact_reportsTo)",
+      "msnfp_contact_request_CustomerId": "Requests (msnfp_contact_request_CustomerId)",
+      "msnfp_contact_request_SubmittedById": "Requests (msnfp_contact_request_SubmittedById)",
+      "msnfp_contactaccountnumber": "Contact Account Number",
+      "msnfp_deceased": "Deceased?",
+      "msnfp_docket_assignedTo": "Dockets (msnfp_docket_assignedTo)",
+      "msnfp_education_contact": "Education (msnfp_education_contact)",
+      "msnfp_ethnicity": "Ethnicity",
+      "msnfp_maidenname": "Maiden Name",
+      "msnfp_plannedGiving_contact": "Planned Giving",
+      "msnfp_primaryconstituenttype": "Primary Constituent Type",
+      "msnfp_recommendation_contact": "Recommendations",
+      "msnfp_report_primaryContact": "Reports (msnfp_report_primaryContact)",
+      "msnfp_report_submittedBy": "Reports (msnfp_report_submittedBy)",
+      "msnfp_ReportsToId": "Reports To",
+      "msnfp_review_reviewer": "Reviews",
+      "nickname": "Nickname",
+      "numberofchildren": "No. of Children",
+      "onholdtime": "On Hold Time (Minutes)",
+      "opportunity_customer_contacts": "Opportunities (opportunity_customer_contacts)",
+      "opportunity_parent_contact": "Opportunities (opportunity_parent_contact)",
+      "order_customer_contacts": "Orders (order_customer_contacts)",
+      "originatingleadid": "Originating Lead",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "pager": "Pager",
+      "parent_contactid": "parent_contactid",
+      "participatesinworkflow": "Participates in Workflow",
+      "paymenttermscode": "Payment Terms",
+      "preferredappointmentdaycode": "Preferred Day",
+      "preferredappointmenttimecode": "Preferred Time",
+      "preferredcontactmethodcode": "Preferred Method of Contact",
+      "preferredequipmentid": "Preferred Facility/Equipment",
+      "preferredserviceid": "Preferred Service",
+      "preferredsystemuserid": "Preferred User",
+      "processid": "Process",
+      "quote_customer_contacts": "Quotes (quote_customer_contacts)",
+      "sag_sag_transcriptattachment_Contact_contact": "Transcript Attachments",
+      "salutation": "Salutation",
+      "servicecontractcontacts_association": "Contracts (servicecontractcontacts_association)",
+      "shippingmethodcode": "Shipping Method",
+      "sla_contact_sla": "SLA",
+      "slainvokedid_contact_sla": "Last SLA applied",
+      "slakpiinstance_contact": "SLA KPI Instances",
+      "socialactivity_postauthor_contacts": "Social Activities (socialactivity_postauthor_contacts)",
+      "socialactivity_postauthoraccount_contacts": "Social Activities (socialactivity_postauthoraccount_contacts)",
+      "Socialprofile_customer_contacts": "Social Profiles",
+      "spousesname": "Spouse/Partner Name",
+      "stageid": "(Deprecated) Process Stage",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "suffix": "Suffix",
+      "teamsfollowed": "TeamsFollowed",
+      "telephone1": "Business Phone",
+      "telephone2": "Home Phone",
+      "telephone3": "Telephone 3",
+      "territorycode": "Territory",
+      "timespentbymeonemailandmeetings": "Time Spent by me",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "transactioncurrencyid": "Currency",
+      "traversedpath": "(Deprecated) Traversed Path",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number",
+      "websiteurl": "Website",
+      "yomifirstname": "Yomi First Name",
+      "yomifullname": "Yomi Full Name",
+      "yomilastname": "Yomi Last Name",
+      "yomimiddlename": "Yomi Middle Name"
+    },
+    "PreferredName": "Contacts",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Contacts (Views)",
+    "Name": "_contact_views",
+    "RelatedEntityName": "Contacts",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "00000000-0000-0000-00aa-000000666400": "Contacts Advanced Find View",
+      "00000000-0000-0000-00aa-000010001003": "My Active Contacts",
+      "00000000-0000-0000-00aa-000010001004": "Active Contacts",
+      "00000000-0000-0000-00aa-000010001033": "Inactive Contacts",
+      "00000000-0000-0000-00aa-000010001210": "Contact Associated View",
+      "0106609a-92d7-e811-a960-000d3a378f36": "Active Volunteers",
+      "0a8fa653-4147-4282-bf6b-168cfa839803": "Contacts: Influenced Deals That We Won",
+      "0d5d377b-5e7c-47b5-bab1-a5cb8b4ac105": "All Contacts",
+      "0eefb94a-1d15-ec11-b6e7-0022482235e2": "Customers of type Person",
+      "19a7de3a-9ce1-ec11-bb3d-000d3a5b49c7": "All Internal Employees",
+      "1d22f965-d744-e911-a838-000d3a3b7224": "Contacts: Preferences Report",
+      "1e4f3b74-771f-ec11-b6e6-000d3a57224b": "Latest",
+      "38962192-31ff-46fc-9ac3-2db0a7d9dc7c": "Selected Contacts Campaigns",
+      "3a282da1-5d90-e011-95ae-00155d9cfa02": "Contacts I Follow",
+      "3a282da1-5d90-e011-95ae-00155d9cfa03": "Contacts Being Followed",
+      "4fda8c27-a83e-e911-a826-000d3a3b73ac": "Volunteers Report",
+      "50658a7f-473b-ec11-8c64-000d3a8ead20": "ASP C1 Contacts",
+      "69103b65-f27e-45ce-a69c-eb1a7c805a45": "Excluded Contacts Campaigns",
+      "6e13eddd-1d15-ec11-b6e7-0022482235e2": "Unstriped Contacts",
+      "719310a3-9c3d-ec11-8c63-00224825510f": "BAM C1 Profile Active",
+      "7355367e-953e-e911-a826-000d3a3b73ac": "Donors Report",
+      "73bc2d9b-4e0e-424c-8839-ed59d6817e3a": "Active Contacts Subgrid View",
+      "79f4545c-ed38-ec11-8c64-000d3a8fd36d": "BAM C1 Specialties Profile Info",
+      "7b53de3d-27d2-e811-a960-000d3a37870e": "Contacts for Account Information View",
+      "927e6cd8-b3ed-4c20-a154-b8bd8a86d172": "Contacts: No Campaign Activities in Last 3 Months",
+      "958e498f-67f7-ec11-bb3d-0022480c5801": "Hierarchy View",
+      "99b02f44-f638-ec11-8c64-000d3a8ead20": "BAM C1 View See Own Specs",
+      "9c241a33-ca0b-4e50-ae92-db780d5b2a12": "Contacts: Responded to Campaigns in Last 6 Months",
+      "9c274800-de44-e911-a838-000d3a3b7224": "Contacts: Employment History Report",
+      "a0fdbeea-fa44-e911-a838-000d3a3b7224": "Contacts: Education History Report",
+      "a2d479c5-53e3-4c69-addd-802327e67a0d": "Contacts Lookup View",
+      "a8f58b5e-a1eb-ea11-a817-000d3a300a85": "Active Volunteers w/ Preferences",
+      "ab582fb0-a846-453e-ad88-77f75ce91264": "My Connections",
+      "cf955fa0-92d7-e811-a960-000d3a378f36": "Active Donors",
+      "d7ab530e-d444-e911-a838-000d3a3b7224": "Contacts: Addresses Report",
+      "eda26f1e-dbcc-40ad-91f2-ff2878d1d8d8": "Entitlement Contacts"
+    }
+  },
+  {
+    "DisplayName": "Confirm Remove Password (Contacts)",
+    "Name": "adx_contact_adx_confirmremovepassword",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "adx_confirmremovepassword",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "adx_confirmremovepassword",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Email Confirmed (Contacts)",
+    "Name": "adx_contact_adx_identity_emailaddress1confirmed",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "adx_identity_emailaddress1confirmed",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "adx_identity_emailaddress1confirmed",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Local Login Disabled (Contacts)",
+    "Name": "adx_contact_adx_identity_locallogindisabled",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "adx_identity_locallogindisabled",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "adx_identity_locallogindisabled",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Lockout Enabled (Contacts)",
+    "Name": "adx_contact_adx_identity_lockoutenabled",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "adx_identity_lockoutenabled",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "adx_identity_lockoutenabled",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Login Enabled (Contacts)",
+    "Name": "adx_contact_adx_identity_logonenabled",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "adx_identity_logonenabled",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "adx_identity_logonenabled",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Mobile Phone Confirmed (Contacts)",
+    "Name": "adx_contact_adx_identity_mobilephoneconfirmed",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "adx_identity_mobilephoneconfirmed",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "adx_identity_mobilephoneconfirmed",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Two Factor Enabled (Contacts)",
+    "Name": "adx_contact_adx_identity_twofactorenabled",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "adx_identity_twofactorenabled",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "adx_identity_twofactorenabled",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Profile Alert (Contacts)",
+    "Name": "adx_contact_adx_profilealert",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "adx_profilealert",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "adx_profilealert",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Profile Is Anonymous (Contacts)",
+    "Name": "adx_profileisanonymous_contact",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "adx_profileisanonymous",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "adx_profileisanonymous",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Role (Contacts)",
+    "Name": "contact_accountrolecode",
+    "OptionSetInfoNameMapping": {
+      "1": "Decision Maker",
+      "2": "Employee",
+      "3": "Influencer"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "accountrolecode",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "accountrolecode",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Address 1: Address Type (Contacts)",
+    "Name": "contact_address1_addresstypecode",
+    "OptionSetInfoNameMapping": {
+      "1": "Bill To",
+      "2": "Ship To",
+      "3": "Primary",
+      "4": "Other"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "address1_addresstypecode",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "address1_addresstypecode",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Address 1: Freight Terms (Contacts)",
+    "Name": "contact_address1_freighttermscode",
+    "OptionSetInfoNameMapping": {
+      "1": "FOB",
+      "2": "No Charge"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "address1_freighttermscode",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "address1_freighttermscode",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Address 1: Shipping Method (Contacts)",
+    "Name": "contact_address1_shippingmethodcode",
+    "OptionSetInfoNameMapping": {
+      "1": "Airborne",
+      "2": "DHL",
+      "3": "FedEx",
+      "4": "UPS",
+      "5": "Postal Mail",
+      "6": "Full Load",
+      "7": "Will Call"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "address1_shippingmethodcode",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "address1_shippingmethodcode",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Address 2: Address Type (Contacts)",
+    "Name": "contact_address2_addresstypecode",
+    "OptionSetInfoNameMapping": {
+      "1": "Bill To",
+      "2": "Ship To",
+      "3": "Primary",
+      "4": "Other"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "address2_addresstypecode",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "address2_addresstypecode",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Address 2: Freight Terms (Contacts)",
+    "Name": "contact_address2_freighttermscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Default Value"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "address2_freighttermscode",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "address2_freighttermscode",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Address 2: Shipping Method (Contacts)",
+    "Name": "contact_address2_shippingmethodcode",
+    "OptionSetInfoNameMapping": {
+      "1": "Default Value"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "address2_shippingmethodcode",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "address2_shippingmethodcode",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Address 3: Address Type (Contacts)",
+    "Name": "contact_address3_addresstypecode",
+    "OptionSetInfoNameMapping": {
+      "1": "Bill To",
+      "2": "Ship To",
+      "3": "Primary",
+      "4": "Other"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "address3_addresstypecode",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "address3_addresstypecode",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Address 3: Freight Terms (Contacts)",
+    "Name": "contact_address3_freighttermscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Default Value"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "address3_freighttermscode",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "address3_freighttermscode",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Address 3: Shipping Method (Contacts)",
+    "Name": "contact_address3_shippingmethodcode",
+    "OptionSetInfoNameMapping": {
+      "1": "Default Value"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "address3_shippingmethodcode",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "address3_shippingmethodcode",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Credit Hold (Contacts)",
+    "Name": "contact_creditonhold",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "creditonhold",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "creditonhold",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Customer Size (Contacts)",
+    "Name": "contact_customersizecode",
+    "OptionSetInfoNameMapping": {
+      "1": "Default Value"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "customersizecode",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "customersizecode",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Relationship Type (Contacts)",
+    "Name": "contact_customertypecode",
+    "OptionSetInfoNameMapping": {
+      "1": "Default Value"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "customertypecode",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "customertypecode",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Do not allow Bulk Emails (Contacts)",
+    "Name": "contact_donotbulkemail",
+    "OptionSetInfoNameMapping": {
+      "0": "Allow",
+      "1": "Do Not Allow"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "donotbulkemail",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "donotbulkemail",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Do not allow Bulk Mails (Contacts)",
+    "Name": "contact_donotbulkpostalmail",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "donotbulkpostalmail",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "donotbulkpostalmail",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Do not allow Emails (Contacts)",
+    "Name": "contact_donotemail",
+    "OptionSetInfoNameMapping": {
+      "0": "Allow",
+      "1": "Do Not Allow"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "donotemail",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "donotemail",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Do not allow Faxes (Contacts)",
+    "Name": "contact_donotfax",
+    "OptionSetInfoNameMapping": {
+      "0": "Allow",
+      "1": "Do Not Allow"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "donotfax",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "donotfax",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Do not allow Phone Calls (Contacts)",
+    "Name": "contact_donotphone",
+    "OptionSetInfoNameMapping": {
+      "0": "Allow",
+      "1": "Do Not Allow"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "donotphone",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "donotphone",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Do not allow Mails (Contacts)",
+    "Name": "contact_donotpostalmail",
+    "OptionSetInfoNameMapping": {
+      "0": "Allow",
+      "1": "Do Not Allow"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "donotpostalmail",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "donotpostalmail",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Send Marketing Materials (Contacts)",
+    "Name": "contact_donotsendmm",
+    "OptionSetInfoNameMapping": {
+      "0": "Send",
+      "1": "Do Not Send"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "donotsendmm",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "donotsendmm",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Education (Contacts)",
+    "Name": "contact_educationcode",
+    "OptionSetInfoNameMapping": {
+      "1": "Default Value"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "educationcode",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "educationcode",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Marital Status (Contacts)",
+    "Name": "contact_familystatuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Single",
+      "192350000": "None",
+      "2": "Married",
+      "3": "Divorced",
+      "4": "Widowed"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "familystatuscode",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "familystatuscode",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Follow Email Activity (Contacts)",
+    "Name": "contact_followemail",
+    "OptionSetInfoNameMapping": {
+      "0": "Do Not Allow",
+      "1": "Allow"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "followemail",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "followemail",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Gender (Contacts)",
+    "Name": "contact_gendercode",
+    "OptionSetInfoNameMapping": {
+      "1": "Male",
+      "192350000": "Non-Specifc",
+      "192350001": "Unknown",
+      "2": "Female"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "gendercode",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "gendercode",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Has Children (Contacts)",
+    "Name": "contact_haschildrencode",
+    "OptionSetInfoNameMapping": {
+      "1": "Default Value"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "haschildrencode",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "haschildrencode",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Auto-created (Contacts)",
+    "Name": "contact_isautocreate",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "isautocreate",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "isautocreate",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Back Office Customer (Contacts)",
+    "Name": "contact_isbackofficecustomer",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "isbackofficecustomer",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "isbackofficecustomer",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "IsPrivate (Contacts)",
+    "Name": "contact_isprivate",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "isprivate",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "isprivate",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Lead Source (Contacts)",
+    "Name": "contact_leadsourcecode",
+    "OptionSetInfoNameMapping": {
+      "1": "Default Value"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "leadsourcecode",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "leadsourcecode",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Marketing Only (Contacts)",
+    "Name": "contact_marketingonly",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "marketingonly",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "marketingonly",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Merged (Contacts)",
+    "Name": "contact_merged",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "merged",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "merged",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Not at Company Flag (Contacts)",
+    "Name": "contact_msdyn_orgchangestatus",
+    "OptionSetInfoNameMapping": {
+      "0": "No Feedback",
+      "1": "Not at Company",
+      "2": "Ignore"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "msdyn_orgchangestatus",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "msdyn_orgchangestatus",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Participates in Workflow (Contacts)",
+    "Name": "contact_participatesinworkflow",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "participatesinworkflow",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "participatesinworkflow",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Payment Terms (Contacts)",
+    "Name": "contact_paymenttermscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Net 30",
+      "2": "2% 10, Net 30",
+      "3": "Net 45",
+      "4": "Net 60"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "paymenttermscode",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "paymenttermscode",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Preferred Day (Contacts)",
+    "Name": "contact_preferredappointmentdaycode",
+    "OptionSetInfoNameMapping": {
+      "0": "Sunday",
+      "1": "Monday",
+      "2": "Tuesday",
+      "3": "Wednesday",
+      "4": "Thursday",
+      "5": "Friday",
+      "6": "Saturday"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "preferredappointmentdaycode",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "preferredappointmentdaycode",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Preferred Time (Contacts)",
+    "Name": "contact_preferredappointmenttimecode",
+    "OptionSetInfoNameMapping": {
+      "1": "Morning",
+      "2": "Afternoon",
+      "3": "Evening"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "preferredappointmenttimecode",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "preferredappointmenttimecode",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Preferred Method of Contact (Contacts)",
+    "Name": "contact_preferredcontactmethodcode",
+    "OptionSetInfoNameMapping": {
+      "1": "Any",
+      "2": "Email",
+      "3": "Phone",
+      "4": "Fax",
+      "5": "Mail"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "preferredcontactmethodcode",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "preferredcontactmethodcode",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Shipping Method (Contacts)",
+    "Name": "contact_shippingmethodcode",
+    "OptionSetInfoNameMapping": {
+      "1": "Default Value"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "shippingmethodcode",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "shippingmethodcode",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (Contacts)",
+    "Name": "contact_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Contacts)",
+    "Name": "contact_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Territory (Contacts)",
+    "Name": "contact_territorycode",
+    "OptionSetInfoNameMapping": {
+      "1": "Default Value"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "territorycode",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "territorycode",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Internal Employee (Contacts)",
+    "Name": "cr139_contact_cr139_issagemployee",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr139_issagemployee",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "cr139_issagemployee",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "optionsetfield (Contacts)",
+    "Name": "cr139_contact_cr139_optionsetfield",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr139_optionsetfield",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "cr139_optionsetfield",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Level",
+    "Name": "cr139_level",
+    "OptionSetInfoNameMapping": {
+      "878580000": "50",
+      "878580001": "100",
+      "878580002": "200",
+      "878580003": "300",
+      "878580004": "400",
+      "878580005": "500",
+      "878580006": "600",
+      "878580007": "700"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr139_level",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "cr139_level",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Contact For Vendor (Contacts)",
+    "Name": "msdyn_contact_msdyn_contactforvendor",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "msdyn_contactforvendor",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "msdyn_contactforvendor",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Has No Company (Contacts)",
+    "Name": "msdyn_contact_msdyn_contacthasnocompany",
+    "OptionSetInfoNameMapping": {
+      "192360000": "True"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "msdyn_contacthasnocompany",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "msdyn_contacthasnocompany",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Disable Web Tracking (Contacts)",
+    "Name": "msdyn_contact_msdyn_disablewebtracking",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "msdyn_disablewebtracking",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "msdyn_disablewebtracking",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "GDPR Optout (Contacts)",
+    "Name": "msdyn_contact_msdyn_gdproptout",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "msdyn_gdproptout",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "msdyn_gdproptout",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Is Minor (Contacts)",
+    "Name": "msdyn_contact_msdyn_isminor",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "msdyn_isminor",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "msdyn_isminor",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Is Minor with Parental Consent (Contacts)",
+    "Name": "msdyn_contact_msdyn_isminorwithparentalconsent",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "msdyn_isminorwithparentalconsent",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "msdyn_isminorwithparentalconsent",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Is Vendor (Contacts)",
+    "Name": "msdyn_contact_msdyn_isvendor",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "msdyn_isvendor",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "msdyn_isvendor",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Sellable (Contacts)",
+    "Name": "msdyn_contact_msdyn_sellable",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "msdyn_sellable",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "msdyn_sellable",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Vendor created by workflow (Contacts)",
+    "Name": "msdyn_contact_msdyn_vendorcreatedbyworkflow",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "msdyn_vendorcreatedbyworkflow",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "msdyn_vendorcreatedbyworkflow",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Contact Type",
+    "Name": "msdyn_contacttype",
+    "OptionSetInfoNameMapping": {
+      "192350000": "Bank Representative",
+      "192350001": "Customer"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "msdyn_contacttype",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "msdyn_contacttype",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Designation",
+    "Name": "msdyn_designation",
+    "OptionSetInfoNameMapping": {
+      "192350000": "Relationship Manager",
+      "192350001": "Account Manager",
+      "192360001": "Senior Bank Representative",
+      "192360002": "Bank Representative"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "msdyn_designation",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "msdyn_designation",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Language",
+    "Name": "msdyn_language",
+    "OptionSetInfoNameMapping": {
+      "192350000": "ar",
+      "192350001": "ar-ae",
+      "192350002": "cs",
+      "192350003": "da",
+      "192350004": "de",
+      "192350005": "de-at",
+      "192350006": "de-ch",
+      "192350007": "en-au",
+      "192350008": "en-ca",
+      "192350009": "en-gb",
+      "192350010": "en-ie",
+      "192350011": "en-in",
+      "192350012": "en-my",
+      "192350013": "en-nz",
+      "192350014": "en-sg",
+      "192350015": "en-us",
+      "192350016": "en-za",
+      "192350017": "es",
+      "192350018": "es-mx",
+      "192350019": "et",
+      "192350020": "fi",
+      "192350021": "fr",
+      "192350022": "fr-be",
+      "192350023": "fr-ca",
+      "192350024": "fr-ch",
+      "192350025": "hu",
+      "192350026": "is",
+      "192350027": "it",
+      "192350028": "it-ch",
+      "192350029": "ja",
+      "192350030": "lt",
+      "192350031": "lv",
+      "192350032": "nb-no",
+      "192350033": "nl",
+      "192350034": "nl-be",
+      "192350035": "pl",
+      "192350036": "pt-br",
+      "192350037": "ru",
+      "192350038": "sv",
+      "192350039": "th",
+      "192350040": "tr",
+      "192350041": "zh-hans",
+      "192350042": "None"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "msdyn_language",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "msdyn_language",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Phone Type",
+    "Name": "msdyn_phonetype",
+    "OptionSetInfoNameMapping": {
+      "192350000": "Home",
+      "192350001": "Mobile"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "msdyn_phonetype",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "msdyn_phonetype",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Service Category",
+    "Name": "msdyn_servicecategory",
+    "OptionSetInfoNameMapping": {
+      "639040000": "Everyday banking",
+      "639040001": "Loans",
+      "639040002": "Investments",
+      "639040003": "Others"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "msdynce_specialtiescategory",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "msdynce_specialtiescategory",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Specialties",
+    "Name": "msdyn_specialties",
+    "OptionSetInfoNameMapping": {
+      "192350000": "Checking & savings",
+      "192350001": "Credit cards",
+      "192350002": "Retirement planning",
+      "192350003": "IRAs & 401(k)s",
+      "192350004": "General investing",
+      "192350005": "College planning",
+      "192350006": "New option",
+      "192350007": "Mortgage financing",
+      "192350008": "Refinancing",
+      "192350009": "Home equity",
+      "192350010": "Auto loans"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "msdyn_specialtiessubcategory",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "MultiSelectPicklistType",
+    "RelatedColumnInvariantName": "msdyn_specialtiessubcategory",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Sub Service Category",
+    "Name": "msdyn_sub_service_category",
+    "OptionSetInfoNameMapping": {
+      "192350000": "Checking & savings",
+      "192350001": "Credit cards",
+      "192350002": "Retirement planning",
+      "192350003": "IRAs and 401(k)s",
+      "192350004": "General investing",
+      "192350005": "College Planning",
+      "192350006": "Mortgage",
+      "192350007": "Refinancing",
+      "192350008": "Home equity",
+      "192350009": "Auto loans",
+      "192350010": "Tell us specifically what you would liked to discuss"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "msdynce_specialties",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "MultiSelectPicklistType",
+    "RelatedColumnInvariantName": "msdynce_specialties",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Background check (Contacts)",
+    "Name": "msdynce_contact_msdynce_backgroundcheck",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "msdynce_backgroundcheck",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "msdynce_backgroundcheck",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Policy 1 (Contacts)",
+    "Name": "msdynce_contact_msdynce_policy1",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "msdynce_policy1",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "msdynce_policy1",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Policy 2 (Contacts)",
+    "Name": "msdynce_contact_msdynce_policy2",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "msdynce_policy2",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "msdynce_policy2",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Safety Guidelines (Contacts)",
+    "Name": "msdynce_contact_msdynce_safetyguidelines",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "msdynce_safetyguidelines",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "msdynce_safetyguidelines",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Schedule drug test (Contacts)",
+    "Name": "msdynce_contact_msdynce_scheduledrugtest",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "msdynce_scheduledrugtest",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "msdynce_scheduledrugtest",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Schedule physical ability test (Contacts)",
+    "Name": "msdynce_contact_msdynce_schedulephysicalabilitytest",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "msdynce_schedulephysicalabilitytest",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "msdynce_schedulephysicalabilitytest",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Sign Agreements (Contacts)",
+    "Name": "msdynce_contact_msdynce_signagreements",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "msdynce_signagreements",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "msdynce_signagreements",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Work Authorization (Contacts)",
+    "Name": "msdynce_contact_msdynce_workauthorization",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "msdynce_workauthorization",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "msdynce_workauthorization",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Preferences Notification (Contacts)",
+    "Name": "msdynce_contact_preferencesnotification",
+    "OptionSetInfoNameMapping": {
+      "0": "Off",
+      "1": "On"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "msdynce_preferencesnotification",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "msdynce_preferencesnotification",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Service Subcategory",
+    "Name": "msdynce_servicesubcategory",
+    "OptionSetInfoNameMapping": {
+      "441790000": "Checking & savings",
+      "441790001": "Credit cards",
+      "441790002": "Retirement planning",
+      "441790003": "IRAs and 401(k)s",
+      "441790004": "General investing",
+      "441790005": "College Planning",
+      "441790006": "Mortgage Financing",
+      "441790007": "Refinancing",
+      "441790008": "Home equity",
+      "441790009": "Auto loans",
+      "441790010": "Tell us specifically what you would liked to discuss"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "msdyn_specialtieslist",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "MultiSelectPicklistType",
+    "RelatedColumnInvariantName": "msdyn_specialtieslist",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Anonymous? (Contacts)",
+    "Name": "msnfp_contact_msnfp_anonymous",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "msnfp_anonymous",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "msnfp_anonymous",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Deceased? (Contacts)",
+    "Name": "msnfp_contact_msnfp_deceased",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "msnfp_deceased",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "msnfp_deceased",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Birth Day (Contacts)",
+    "Name": "new_contact_msnfp_birthday",
+    "OptionSetInfoNameMapping": {
+      "100000000": "DaysOfMonth"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "msnfp_birthday",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "msnfp_birthday",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Birth Month (Contacts)",
+    "Name": "new_contact_msnfp_birthmonth",
+    "OptionSetInfoNameMapping": {
+      "100000000": "MonthNames"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "msnfp_birthmonth",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "msnfp_birthmonth",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Ethnicity (Contacts)",
+    "Name": "new_contact_msnfp_ethnicity",
+    "OptionSetInfoNameMapping": {
+      "100000000": "Ethnicity"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "msnfp_ethnicity",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "msnfp_ethnicity",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Primary Constituent Type (Contacts)",
+    "Name": "new_contact_msnfp_primaryconstituenttype",
+    "OptionSetInfoNameMapping": {
+      "100000000": "Donor",
+      "844060000": "Volunteer",
+      "844060001": "Partner",
+      "844060002": "Board Member",
+      "844060003": "Beneficiary",
+      "844060004": "Member",
+      "844060005": "Advocate"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "msnfp_primaryconstituenttype",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "msnfp_primaryconstituenttype",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "MonthOfYear",
+    "Name": "recurrencerule_monthofyear",
+    "OptionSetInfoNameMapping": {
+      "0": "Invalid Month Of Year",
+      "1": "January",
+      "10": "October",
+      "11": "November",
+      "12": "December",
+      "2": "February",
+      "3": "March",
+      "4": "April",
+      "5": "May",
+      "6": "June",
+      "7": "July",
+      "8": "August",
+      "9": "September"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "msdyn_birthmonth",
+        "OptionSetReferenceEntityName": "Contacts"
+      },
+      "OptionSetReferenceItem1": {
+        "OptionSetReferenceColumnName": "msdyn_anniversarymonth",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "msdyn_birthmonth",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  }
+]

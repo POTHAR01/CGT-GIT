@@ -1,0 +1,102 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr139_mastercertificates",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr139_mastercertificate",
+    "MaxGetRowsCount": 500,
+    "Name": "Master Certificates",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr139_certificate_ExamCode_cr139_masterce": "Individual Certificates",
+      "cr139_CertificateGoal_ExamCode_cr139_mast": "Certificate Goals",
+      "cr139_examcode": "Exam Code",
+      "cr139_examname": "Exam Name",
+      "cr139_Goal_ExamName_cr139_mastercertifica": "Individual Goals",
+      "cr139_mastercertificate_AsyncOperations": "System Jobs",
+      "cr139_mastercertificate_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr139_mastercertificate_DuplicateBaseRecord": "Duplicate Records (cr139_mastercertificate_DuplicateBaseRecord)",
+      "cr139_mastercertificate_DuplicateMatchingRecord": "Duplicate Records (cr139_mastercertificate_DuplicateMatchingRecord)",
+      "cr139_mastercertificate_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr139_mastercertificate_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr139_mastercertificate_ProcessSession": "Process Sessions",
+      "cr139_mastercertificate_SyncErrors": "Sync Errors",
+      "cr139_mastercertificateid": "Master Certificate",
+      "cr139_name": "MCP Name",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Master Certificates",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Master Certificates (Views)",
+    "Name": "_cr139_mastercertificate_views",
+    "RelatedEntityName": "Master Certificates",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "05c62938-e3dc-4087-a97b-6bc29fcc501a": "Inactive Master Certificates",
+      "70fb0d19-68d2-4429-bd60-6a85ab9bec9e": "Master Certificate Advanced Find View",
+      "cbd69d0a-bf7a-4847-a61c-d4bb02e9005c": "Active Master Certificates",
+      "ea5175c2-a309-4ac0-a00f-ecc52ec95183": "Master Certificate Associated View",
+      "fcfbd71a-d411-49c0-9271-f8b92910ea5d": "Master Certificate Lookup View"
+    }
+  },
+  {
+    "DisplayName": "Status (Master Certificates)",
+    "Name": "cr139_mastercertificate_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Master Certificates"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Master Certificates",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Master Certificates)",
+    "Name": "cr139_mastercertificate_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Master Certificates"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Master Certificates",
+    "Type": "OptionSetInfo"
+  }
+]

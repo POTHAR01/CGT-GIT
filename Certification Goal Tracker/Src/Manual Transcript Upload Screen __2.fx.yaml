@@ -1,0 +1,634 @@
+"'Manual Transcript Upload Screen __2' As screen":
+    OnVisible: =Set(IsReadOnly,true);Set(FieldReadonly,true);
+
+    "Gallery1_1 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
+        Height: =515
+        Items: =Filter(Filter('Individual Certificates', 'Individual Certificates (Views)'.'All Certificates'),Contact.Contact= currentUserContact.contactid)
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =118
+        Width: =788
+        Y: =149
+        ZIndex: =1
+
+        Title2_1 As label:
+            AutoHeight: =true
+            Height: =88
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: |-
+                =Concatenate(ThisItem.'Exam Code', " : " , ThisItem.'Exam Name')
+            VerticalAlign: =VerticalAlign.Top
+            Width: =670
+            X: =32
+            Y: =16
+            ZIndex: =1
+
+        Subtitle2_1 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.'Status Reason'
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 104
+            X: =32
+            Y: =85.6
+            ZIndex: =2
+
+        NextArrow2_1 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            Height: =60
+            Icon: =Icon.ChevronRight
+            OnSelect: =Set(IsReadOnly,true);EditForm(Form2_1);
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            TabIndex: =0
+            Tooltip: ="View item details"
+            Width: =60
+            X: =702
+            Y: =26
+            ZIndex: =3
+
+        Separator7_1 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =4
+
+    "'Your Certification Goals Label_2' As label":
+        FontWeight: =Semibold
+        Height: =65
+        Size: =32
+        Text: ="Pending Certifications"
+        Width: =654
+        X: =31
+        Y: =65
+        ZIndex: =3
+
+    "'Screen 1 Header_2' As label":
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(56, 96, 178, 1)
+        Height: =65
+        Size: =20
+        Text: ="Certification Goal Tracker"
+        Width: =1366
+        ZIndex: =6
+
+    "'Screen 1 Footer_2' As label":
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(56, 96, 178, 1)
+        Height: =52
+        Size: =20
+        Text: =""
+        Width: =1366
+        Y: =716
+        ZIndex: =7
+
+    BackIcon_8 As icon.BackArrow:
+        BorderColor: =
+        BorderStyle: =
+        BorderThickness: =
+        Color: =RGBA(255, 255, 255, 0.83)
+        DisabledBorderColor: =
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        FocusedBorderColor: =
+        FocusedBorderThickness: =
+        Height: =45
+        HoverBorderColor: =
+        HoverColor: =RGBA(0, 0, 0, 0.5)
+        Icon: =Icon.BackArrow
+        OnSelect: |-
+            =Navigate(
+                'User Info Screen',
+                ScreenTransition.Fade
+            );
+        PressedBorderColor: =
+        PressedColor: =RGBA(0, 0, 0, 0.3)
+        Tooltip: ="Back to Home Screen"
+        Width: =45
+        X: =32
+        Y: =723
+        ZIndex: =9
+
+    Label3_4 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(56, 96, 178, 1)
+        Size: =15
+        Text: ="Previous"
+        X: =88
+        Y: =722
+        ZIndex: =10
+
+    Button3_1 As button:
+        OnSelect: =Set(IsReadOnly,false);ResetForm(Form2_1);NewForm(Form2_1);Set(FieldReadonly,true);
+        Text: ="Add New Exam"
+        Width: =222
+        X: =107
+        Y: =674
+        ZIndex: =11
+
+    Label5_1 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(56, 96, 178, 1)
+        Height: =48
+        Size: =15
+        Text: ="New / Update Form"
+        Width: =577
+        X: =788
+        Y: =149
+        ZIndex: =13
+
+    Button1_3 As button:
+        OnSelect: =SubmitForm(Form2_1);Navigate('Success Screen');
+        Text: ="Submit"
+        Visible: =If(CountRows(DataCardValue11_1.Attachments)=0,false,true) And If(DateValue2_1.SelectedDate=Blank(),false,true)
+        X: =1136
+        Y: =723
+        ZIndex: =14
+
+    Label6_1 As label:
+        Height: =43
+        Text: ="Please ensure to attach Exam completion proof and date completed before submitting."
+        Width: =578
+        X: =788
+        Y: =87
+        ZIndex: =15
+
+    Form2_1 As form:
+        DataSource: ='Individual Certificates'
+        Height: =513
+        Item: =Gallery1_1.Selected
+        NumberOfColumns: =1
+        Width: =572
+        X: =792
+        Y: =201
+        ZIndex: =16
+
+        "'Certificate Name_DataCard1' As typedDataCard.comboBoxEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr139_ExamCode"
+            Default: =ThisItem.'Exam Name'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Individual Certificates'],DataSourceInfo.DisplayName,"cr139_ExamCode")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue16.Selected
+            Visible: =true
+            Width: =572
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            DataCardKey18 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =(Parent.Width - 60) * 0.4
+                Wrap: =false
+                X: =30
+                Y: =10 + (DataCardValue16.Height / 2) - (Self.Height / 2)
+                ZIndex: =1
+
+            DataCardValue16 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["cr139_name"]
+                DisplayMode: =If(IsReadOnly =true ,DisplayMode.Disabled,DisplayMode.Edit)
+                Items: =Choices([@'Individual Certificates'].'Exam Name')
+                OnSelect: =If(!(IsBlank(DataCardValue16.SelectedItems)),Set(FieldReadonly,false),Set(FieldReadonly,true))
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SearchFields: =["cr139_name"]
+                SearchItems: =Search(Choices([@'Individual Certificates'].'Exam Name'),DataCardValue16.SearchText,"cr139_name")
+                SelectMultiple: =false
+                Tooltip: =Parent.DisplayName
+                Width: =(Parent.Width - 60) * 0.6
+                X: =DataCardKey18.X + DataCardKey18.Width
+                Y: =10
+                ZIndex: =2
+
+            ErrorMessage16 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue16.Y + DataCardValue16.Height
+                ZIndex: =3
+
+            StarVisible16 As label:
+                Align: =Align.Center
+                Height: =DataCardKey18.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey18.Y
+                ZIndex: =4
+
+        "'Exam Code_DataCard4' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr139_examcode_"
+            Default: =ThisItem.'Exam Code'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Individual Certificates'],DataSourceInfo.DisplayName,"cr139_examcode_")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Individual Certificates'], DataSourceInfo.MaxLength, "cr139_examcode_")
+            Required: =false
+            Update: =DataCardValue14.Text
+            Width: =572
+            X: =0
+            Y: =1
+            ZIndex: =1
+
+            DataCardKey16 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =(Parent.Width - 60) * 0.4
+                Wrap: =false
+                X: =30
+                Y: =10 + (DataCardValue14.Height / 2) - (Self.Height / 2)
+                ZIndex: =1
+
+            DataCardValue14 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =If(IsReadOnly = true && FieldReadonly = false ,DisplayMode.Disabled,DisplayMode.Edit)
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =(Parent.Width - 60) * 0.6
+                X: =DataCardKey16.X + DataCardKey16.Width
+                Y: =10
+                ZIndex: =2
+
+            ErrorMessage14 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue14.Y + DataCardValue14.Height
+                ZIndex: =3
+
+            StarVisible14 As label:
+                Align: =Align.Center
+                Height: =DataCardKey16.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey16.Y
+                ZIndex: =4
+
+        "'Exam Name_DataCard4' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr139_name"
+            Default: =ThisItem.Name
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Individual Certificates'],DataSourceInfo.DisplayName,"cr139_name")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Individual Certificates'], DataSourceInfo.MaxLength, "cr139_name")
+            Required: =false
+            Update: =DataCardValue15.Text
+            Visible: =true
+            Width: =572
+            X: =0
+            Y: =2
+            ZIndex: =1
+
+            DataCardKey17 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =(Parent.Width - 60) * 0.4
+                Wrap: =false
+                X: =30
+                Y: =10 + (DataCardValue15.Height / 2) - (Self.Height / 2)
+                ZIndex: =1
+
+            DataCardValue15 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =If(IsReadOnly =true && FieldReadonly = false,DisplayMode.Disabled,DisplayMode.Edit)
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =(Parent.Width - 60) * 0.6
+                X: =DataCardKey17.X + DataCardKey17.Width
+                Y: =10
+                ZIndex: =2
+
+            ErrorMessage15 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue15.Y + DataCardValue15.Height
+                ZIndex: =3
+
+            StarVisible15 As label:
+                Align: =Align.Center
+                Height: =DataCardKey17.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey17.Y
+                ZIndex: =4
+
+        "'Status Reason_DataCard5_1' As typedDataCard.comboBoxOptionSetSingleEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="statuscode"
+            Default: =ThisItem.'Status Reason'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Individual Certificates'],DataSourceInfo.DisplayName,"statuscode")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =48
+            Required: =false
+            Update: =DataCardValue10_1.Selected.Value
+            Width: =572
+            X: =0
+            Y: =4
+            ZIndex: =1
+
+            DataCardKey12_1 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =(Parent.Width - 60) * 0.4
+                Wrap: =false
+                X: =30
+                Y: =10 + (DataCardValue10_1.Height / 2) - (Self.Height / 2)
+                ZIndex: =1
+
+            DataCardValue10_1 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultSelectedItems: =Choices('Individual Certificates'.'Status Reason',"Not Started")
+                DisplayFields: =["Value"]
+                DisplayMode: =If(IsReadOnly =false,DisplayMode.Disabled,DisplayMode.Edit)
+                IsSearchable: =false
+                Items: =Choices('Status Reason (Individual Certificates)')
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SearchFields: =["Value"]
+                SearchItems: =[]
+                SelectMultiple: =false
+                Tooltip: =Parent.DisplayName
+                Width: =(Parent.Width - 60) * 0.6
+                X: =DataCardKey12_1.X + DataCardKey12_1.Width
+                Y: =10
+                ZIndex: =2
+
+            ErrorMessage12_1 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue10_1.Y + DataCardValue10_1.Height
+                ZIndex: =3
+
+            StarVisible12_1 As label:
+                Align: =Align.Center
+                Height: =DataCardKey12_1.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey12_1.Y
+                ZIndex: =4
+
+        Attachments_DataCard2_1 As typedDataCard.attachmentsEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="{Attachments}"
+            Default: =ThisItem.Attachments
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Individual Certificates'],DataSourceInfo.DisplayName,"{Attachments}")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =156
+            Required: =true
+            Update: =DataCardValue11_1.Attachments
+            Width: =572
+            X: =0
+            Y: =5
+            ZIndex: =1
+
+            DataCardKey13_1 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =(Parent.Width - 60) * 0.4
+                Wrap: =false
+                X: =30
+                Y: =10 + (DataCardValue11_1.Height / 2) - (Self.Height / 2)
+                ZIndex: =1
+
+            DataCardValue11_1 As attachments:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DisplayMode: =Parent.DisplayMode
+                Height: =100
+                IsInDataCard: =true
+                Items: =Parent.Default
+                PaddingBottom: =5
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PaddingRight: =5
+                PaddingTop: =5
+                Tooltip: =Parent.DisplayName
+                Width: =(Parent.Width - 60) * 0.6
+                X: =DataCardKey13_1.X + DataCardKey13_1.Width
+                Y: =10
+                ZIndex: =2
+
+            ErrorMessage13_1 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue11_1.Y + DataCardValue11_1.Height
+                ZIndex: =3
+
+            StarVisible13_1 As label:
+                Align: =Align.Center
+                Height: =DataCardKey13_1.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey13_1.Y
+                ZIndex: =4
+
+        "'Date Completed_DataCard2_1' As typedDataCard.dateTimeEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr139_datecompleted"
+            Default: =ThisItem.'Date Completed'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Individual Certificates'],DataSourceInfo.DisplayName,"cr139_datecompleted")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =81
+            Required: =true
+            Update: =DateValue2_1.SelectedDate + Time(Value(HourValue2_1.Selected.Value), Value(MinuteValue2_1.Selected.Value), 0)
+            Width: =572
+            X: =0
+            Y: =3
+            ZIndex: =17
+
+            DataCardKey11_1 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =(Parent.Width - 60) * 0.4
+                Wrap: =false
+                X: =15
+                Y: =7
+                ZIndex: =1
+
+            DateValue2_1 As datepicker:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultDate: =Parent.Default
+                DisplayMode: =Parent.DisplayMode
+                EndYear: =Year(Today())+100
+                IsEditable: =true
+                PaddingBottom: =0
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                StartYear: =1899
+                Tooltip: =Parent.DisplayName
+                Width: =(Parent.Width - 60) * 0.6
+                X: =235
+                Y: =7
+                ZIndex: =2
+
+            HourValue2_1 As dropdown:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Text(Hour(Parent.Default),"00")
+                DisplayMode: =Parent.DisplayMode
+                Height: =DateValue2_1.Height
+                Items: =["00","01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23"]
+                PaddingBottom: =5
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PaddingRight: =5
+                PaddingTop: =5
+                Tooltip: =Parent.DisplayName
+                Visible: =false
+                Width: =DateValue2_1.Width / 2 - 5
+                X: =DateValue2_1.X
+                Y: =DateValue2_1.Y + DateValue2_1.Height + 10
+                ZIndex: =3
+
+            Separator2_1 As label:
+                Align: =Align.Center
+                FontWeight: =FontWeight.Bold
+                Height: =HourValue2_1.Height
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: |-
+                    =":"
+                Visible: =false
+                Width: =10
+                Wrap: =false
+                X: =HourValue2_1.X + HourValue2_1.Width
+                Y: =HourValue2_1.Y
+                ZIndex: =4
+
+            MinuteValue2_1 As dropdown:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Text(Minute(Parent.Default),"00")
+                DisplayMode: =Parent.DisplayMode
+                Height: =HourValue2_1.Height
+                Items: =["00","01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50","51","52","53","54","55","56","57","58","59"]
+                PaddingBottom: =5
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PaddingRight: =5
+                PaddingTop: =5
+                Tooltip: =Parent.DisplayName
+                Visible: =false
+                Width: =HourValue2_1.Width
+                X: =HourValue2_1.X + HourValue2_1.Width + Separator2_1.Width
+                Y: =HourValue2_1.Y
+                ZIndex: =5
+
+            ErrorMessage11_1 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =HourValue2_1.Y + HourValue2_1.Height
+                ZIndex: =6
+
+            StarVisible11_1 As label:
+                Align: =Align.Center
+                Height: =DataCardKey11_1.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey11_1.Y
+                ZIndex: =7
+
